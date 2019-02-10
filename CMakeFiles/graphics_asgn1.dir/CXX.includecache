@@ -20,6 +20,16 @@ main.h
 main.h
 /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.h
 
+/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy.cpp
+enemy.h
+/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy.h
+main.h
+/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.h
+
+/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy.h
+main.h
+/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.h
+
 /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/input.cpp
 iostream
 -
@@ -51,6 +61,8 @@ sea.h
 /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/sea.h
 plane.h
 /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/plane.h
+enemy.h
+/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy.h
 
 /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.h
 iostream

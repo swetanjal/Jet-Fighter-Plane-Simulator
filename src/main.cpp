@@ -2,6 +2,7 @@
 #include "timer.h"
 #include "sea.h"
 #include "plane.h"
+#include "enemy.h"
 using namespace std;
 
 GLMatrices Matrices;
@@ -20,6 +21,7 @@ Timer t60(1.0 / 60);
 /* Render the scene with openGL */
 Sea sea;
 Plane plane;
+vector <Enemy> enemies;
 /* Edit this function according to your assignment */
 void draw() {
     // clear the color and depth in the frame buffer
@@ -31,11 +33,11 @@ void draw() {
 
     // Eye - Location of camera. Don't change unless you are sure!!
     //glm::vec3 eye ( 5*cos(camera_rotation_angle*M_PI/180.0f), 0, 5*sin(camera_rotation_angle*M_PI/180.0f) );
-    glm::vec3 eye (0, 10, 10);
+    glm::vec3 eye (0, 10, 15);
     // Target - Where is the camera looking at.  Don't change unless you are sure!!
     glm::vec3 target (0, 0, 0);
     // Up - Up vector defines tilt of camera.  Don't change unless you are sure!!
-    glm::vec3 up (0, 0, -1);
+    glm::vec3 up (0, 1, 0);
 
     // Compute Camera matrix (view)
     Matrices.view = glm::lookAt( eye, target, up ); // Rotating Camera for 3D
@@ -53,6 +55,8 @@ void draw() {
     // Scene render
     sea.draw(VP);
     plane.draw(VP);
+    for(int i = 0; i < enemies.size(); ++i)
+        enemies[i].draw(VP);
 }
 
 void tick_input(GLFWwindow *window) {
@@ -73,6 +77,7 @@ void initGL(GLFWwindow *window, int width, int height) {
     // Create the models
     sea = Sea(0, 0, COLOR_SEA_BLUE, 1);
     plane = Plane(1, 5, COLOR_RED, 1);
+    enemies.push_back(Enemy(6, 0, -4, COLOR_BLACK, 0));
     // Create and compile our GLSL program from the shaders
     programID = LoadShaders("Sample_GL.vert", "Sample_GL.frag");
     // Get a handle for our "MVP" uniform

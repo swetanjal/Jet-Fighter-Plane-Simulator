@@ -8,10 +8,15 @@ CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o
  /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/color.cpp
  /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.h
+CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o
+ /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy.cpp
+ /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy.h
+ /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.h
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o
  /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/input.cpp
  /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o
+ /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy.h
  /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.cpp
  /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.h
  /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/plane.h

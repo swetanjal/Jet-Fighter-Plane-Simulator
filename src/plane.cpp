@@ -107,8 +107,8 @@ Plane::Plane(float r, float l, color_t color, double SPEED) {
     this->object = create3DObject(GL_TRIANGLES, 3 * N, vertex_buffer_data, COLOR_GREEN, GL_FILL);
     this->object2 =  create3DObject(GL_TRIANGLES, 3 * N, vertex_buffer_data2, COLOR_GREEN, GL_FILL);
     this->object3 =  create3DObject(GL_TRIANGLES, 3 * 2 * N, vertex_buffer_data3, COLOR_RED, GL_FILL);
-	this->object4 = create3DObject(GL_TRIANGLES, 3 * 6, vertex_buffer_data4, COLOR_BLACK, GL_FILL);
-	this->object5 = create3DObject(GL_TRIANGLES, 3 * 2, vertex_buffer_data5, COLOR_BLACK, GL_FILL);
+	this->object4 = create3DObject(GL_TRIANGLES, 3 * 6, vertex_buffer_data4, COLOR_STEEL_GRAY, GL_FILL);
+	this->object5 = create3DObject(GL_TRIANGLES, 3 * 2, vertex_buffer_data5, COLOR_STEEL_GRAY, GL_FILL);
 }
 
 void Plane::draw(glm::mat4 VP) {
