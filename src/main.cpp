@@ -1,7 +1,7 @@
 #include "main.h"
 #include "timer.h"
-#include "ball.h"
-
+#include "sea.h"
+#include "plane.h"
 using namespace std;
 
 GLMatrices Matrices;
@@ -12,15 +12,14 @@ GLFWwindow *window;
 * Customizable functions *
 **************************/
 
-Ball ball1;
-Ball ball2;
-
 float screen_zoom = 1, screen_center_x = 0, screen_center_y = 0;
 float camera_rotation_angle = 0;
 
 Timer t60(1.0 / 60);
 
 /* Render the scene with openGL */
+Sea sea;
+Plane plane;
 /* Edit this function according to your assignment */
 void draw() {
     // clear the color and depth in the frame buffer
@@ -32,11 +31,11 @@ void draw() {
 
     // Eye - Location of camera. Don't change unless you are sure!!
     //glm::vec3 eye ( 5*cos(camera_rotation_angle*M_PI/180.0f), 0, 5*sin(camera_rotation_angle*M_PI/180.0f) );
-    glm::vec3 eye (0, 0, 5);
+    glm::vec3 eye (0, 10, 10);
     // Target - Where is the camera looking at.  Don't change unless you are sure!!
     glm::vec3 target (0, 0, 0);
     // Up - Up vector defines tilt of camera.  Don't change unless you are sure!!
-    glm::vec3 up (0, 1, 0);
+    glm::vec3 up (0, 0, -1);
 
     // Compute Camera matrix (view)
     Matrices.view = glm::lookAt( eye, target, up ); // Rotating Camera for 3D
@@ -51,10 +50,9 @@ void draw() {
     // For each model you render, since the MVP will be different (at least the M part)
     // Don't change unless you are sure!!
     glm::mat4 MVP;  // MVP = Projection * View * Model
-
     // Scene render
-    ball1.draw(VP);
-    ball2.draw(VP);
+    sea.draw(VP);
+    plane.draw(VP);
 }
 
 void tick_input(GLFWwindow *window) {
@@ -66,21 +64,6 @@ void tick_input(GLFWwindow *window) {
 }
 
 void tick_elements() {
-    ball1.tick();
-    ball2.tick();
-    if(ball1.position.y <= -3)
-    {
-        ball1.gravity = 0;
-        ball2.gravity = 0;
-    }
-    else if((ball1.position.x + 2) >= ball2.position.x)
-    {
-        ball1.speed = 0;
-        ball2.speed = 0;
-        ball1.gravity = -0.01;
-        ball2.gravity = -0.01;
-    }
-    camera_rotation_angle += 1;
 }
 
 /* Initialize the OpenGL rendering properties */
@@ -88,9 +71,8 @@ void tick_elements() {
 void initGL(GLFWwindow *window, int width, int height) {
     /* Objects should be created before any other gl function and shaders */
     // Create the models
-
-    ball1       = Ball(-3, 0, COLOR_RED, 0.01);
-    ball2       = Ball(3, 0, COLOR_GREEN, -0.01);
+    sea = Sea(0, 0, COLOR_SEA_BLUE, 1);
+    plane = Plane(1, 5, COLOR_RED, 1);
     // Create and compile our GLSL program from the shaders
     programID = LoadShaders("Sample_GL.vert", "Sample_GL.frag");
     // Get a handle for our "MVP" uniform
@@ -111,16 +93,16 @@ void initGL(GLFWwindow *window, int width, int height) {
     cout << "VERSION: " << glGetString(GL_VERSION) << endl;
     cout << "GLSL: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << endl;
 }
-
-
+int window_width;
+int window_height;
 int main(int argc, char **argv) {
     srand(time(0));
-    int width  = 600;
-    int height = 600;
+    window_width  = 800;
+    window_height = 800;
 
-    window = initGLFW(width, height);
+    window = initGLFW(window_width, window_height);
 
-    initGL (window, width, height);
+    initGL (window, window_width, window_height);
 
     /* Draw in loop */
     while (!glfwWindowShouldClose(window)) {
@@ -154,5 +136,7 @@ void reset_screen() {
     float bottom = screen_center_y - 4 / screen_zoom;
     float left   = screen_center_x - 4 / screen_zoom;
     float right  = screen_center_x + 4 / screen_zoom;
-    Matrices.projection = glm::ortho(left, right, bottom, top, 0.1f, 500.0f);
+    GLfloat fov = M_PI / 2;
+    Matrices.projection = glm::perspective(fov, (GLfloat) window_width / (GLfloat) window_height, 0.1f, 500.0f);
+    //Matrices.projection = glm::ortho(left, right, bottom, top, 0.1f, 500.0f);
 }

@@ -1,4 +1,4 @@
-# Install script for directory: /home/tapas/workspace/Repositories/graphics-boilerplate
+# Install script for directory: /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tapas/workspace/Repositories/graphics-boilerplate/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

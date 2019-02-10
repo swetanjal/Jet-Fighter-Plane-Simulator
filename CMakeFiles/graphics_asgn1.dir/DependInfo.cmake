@@ -4,13 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tapas/workspace/Repositories/graphics-boilerplate/src/ball.cpp" "/home/tapas/workspace/Repositories/graphics-boilerplate/CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o"
-  "/home/tapas/workspace/Repositories/graphics-boilerplate/src/color.cpp" "/home/tapas/workspace/Repositories/graphics-boilerplate/CMakeFiles/graphics_asgn1.dir/src/color.cpp.o"
-  "/home/tapas/workspace/Repositories/graphics-boilerplate/src/input.cpp" "/home/tapas/workspace/Repositories/graphics-boilerplate/CMakeFiles/graphics_asgn1.dir/src/input.cpp.o"
-  "/home/tapas/workspace/Repositories/graphics-boilerplate/src/main.cpp" "/home/tapas/workspace/Repositories/graphics-boilerplate/CMakeFiles/graphics_asgn1.dir/src/main.cpp.o"
-  "/home/tapas/workspace/Repositories/graphics-boilerplate/src/nonedit.cpp" "/home/tapas/workspace/Repositories/graphics-boilerplate/CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o"
-  "/home/tapas/workspace/Repositories/graphics-boilerplate/src/other_handlers.cpp" "/home/tapas/workspace/Repositories/graphics-boilerplate/CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o"
-  "/home/tapas/workspace/Repositories/graphics-boilerplate/src/timer.cpp" "/home/tapas/workspace/Repositories/graphics-boilerplate/CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
+  "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/ball.cpp" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o"
+  "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/color.cpp" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/color.cpp.o"
+  "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/input.cpp" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/input.cpp.o"
+  "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.cpp" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/main.cpp.o"
+  "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/nonedit.cpp" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o"
+  "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/other_handlers.cpp" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o"
+  "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/plane.cpp" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o"
+  "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/sea.cpp" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o"
+  "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/timer.cpp" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,3 +1,0 @@
-/home/tapas/workspace/Repositories/graphics-boilerplate/build/CMakeFiles/rebuild_cache.dir
-/home/tapas/workspace/Repositories/graphics-boilerplate/build/CMakeFiles/graphics_asgn1.dir
-/home/tapas/workspace/Repositories/graphics-boilerplate/build/CMakeFiles/edit_cache.dir
