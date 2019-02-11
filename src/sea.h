@@ -14,6 +14,7 @@ public:
     void set_position(float x, float y);
     void tick();
     double speed;
+    float radius;
     double gravity;
 private:
     VAO *object;

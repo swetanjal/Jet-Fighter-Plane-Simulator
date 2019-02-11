@@ -14,45 +14,45 @@ Enemy::Enemy(float x, float y, float z, color_t color, double SPEED) {
     // Our vertices. Three consecutive floats give a 3D vertex; Three consecutive vertices give a triangle.
     // A cube has 6 faces with 2 triangles each, so this makes 6*2=12 triangles, and 12*3 vertices
     static const GLfloat vertex_buffer_data[] = {
-        -length *1.0f / 2, breadth *1.0f/ 2, depth, //1
-        -length *1.0f/ 2, -breadth *1.0f/ 2, depth,//2
-        length *1.0f/ 2, -breadth *1.0f/ 2, depth, //3
+        -length *1.0f / 2, breadth *1.0f/ 2, depth / 2, //1
+        -length *1.0f/ 2, -breadth *1.0f/ 2, depth / 2,//2
+        length *1.0f/ 2, -breadth *1.0f/ 2, depth / 2, //3
         
-        length *1.0f/ 2, -breadth *1.0f/ 2, depth,
-        length *1.0f/ 2, breadth *1.0f/ 2, depth, //4
-        -length *1.0f/ 2, breadth *1.0f/ 2, depth,
+        length *1.0f/ 2, -breadth *1.0f/ 2, depth / 2,
+        length *1.0f/ 2, breadth *1.0f/ 2, depth / 2, //4
+        -length *1.0f/ 2, breadth *1.0f/ 2, depth / 2,
 
-        -length *1.0f/ 2, breadth *1.0f/ 2, 0.0f,//5
-        -length *1.0f/ 2, -breadth *1.0f/ 2, 0.0f,//6
-        length *1.0f/ 2, -breadth *1.0f/ 2, 0.0f,//7
+        -length *1.0f/ 2, breadth *1.0f/ 2, -depth / 2,//5
+        -length *1.0f/ 2, -breadth *1.0f/ 2, -depth / 2,//6
+        length *1.0f/ 2, -breadth *1.0f/ 2, -depth / 2,//7
         
-        length *1.0f/ 2, -breadth *1.0f/ 2, 0.0f,
-        length *1.0f/ 2, breadth *1.0f/ 2, 0.0f,//8
-        -length *1.0f/ 2, breadth *1.0f/ 2, 0.0f,
+        length *1.0f/ 2, -breadth *1.0f/ 2, -depth / 2,
+        length *1.0f/ 2, breadth *1.0f/ 2, -depth / 2,//8
+        -length *1.0f/ 2, breadth *1.0f/ 2, -depth / 2,
 
-        -length *1.0f/ 2, breadth *1.0f/ 2, depth,
-        -length *1.0f/ 2, breadth *1.0f/ 2, 0.0f,//5
-        length / 2, breadth / 2, 0.0f,//8
+        -length *1.0f/ 2, breadth *1.0f/ 2, depth / 2,
+        -length *1.0f/ 2, breadth *1.0f/ 2, -depth / 2,//5
+        length / 2, breadth / 2, -depth / 2,//8
 
-        length / 2, breadth / 2, 0.0f,//8
-        length / 2, breadth / 2, depth, //4
-        -length / 2, breadth / 2, depth, //1
+        length / 2, breadth / 2, -depth / 2,//8
+        length / 2, breadth / 2, depth / 2, //4
+        -length / 2, breadth / 2, depth / 2, //1
 
-        -length / 2, breadth / 2, depth, //1
-        -length *1.0f/ 2, breadth *1.0f/ 2, 0.0f,//5
-        -length / 2, -breadth / 2, 0.0f,//6
+        -length / 2, breadth / 2, depth / 2, //1
+        -length *1.0f/ 2, breadth *1.0f/ 2, -depth / 2,//5
+        -length / 2, -breadth / 2, -depth / 2,//6
 
-        -length / 2, -breadth / 2, 0.0f,//6
-        -length / 2, breadth / 2, depth, //1
-        -length / 2, -breadth / 2, depth,//2
+        -length / 2, -breadth / 2, -depth / 2,//6
+        -length / 2, breadth / 2, depth / 2, //1
+        -length / 2, -breadth / 2, depth / 2,//2
 
-        length / 2, breadth / 2, depth, //4
-        length / 2, -breadth / 2, 0.0f,//7
-        length / 2, breadth / 2, 0.0f,//8
+        length / 2, breadth / 2, depth / 2, //4
+        length / 2, -breadth / 2, -depth / 2,//7
+        length / 2, breadth / 2, -depth / 2,//8
 
-        length / 2, -breadth / 2, depth, //3
-        length / 2, -breadth / 2, 0.0f,//7
-        length / 2, breadth / 2, depth, //4
+        length / 2, -breadth / 2, depth / 2, //3
+        length / 2, -breadth / 2, -depth / 2,//7
+        length / 2, breadth / 2, depth / 2, //4
     };
 
     this->object = create3DObject(GL_TRIANGLES, 10*3, vertex_buffer_data, color, GL_FILL);

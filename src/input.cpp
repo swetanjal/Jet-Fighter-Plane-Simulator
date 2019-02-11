@@ -5,7 +5,7 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-
+#include "global.h"
 #define GLM_FORCE_RADIANS
 #include <glm/glm.hpp>
 #include <glm/gtx/transform.hpp>
@@ -25,19 +25,23 @@ void keyboard(GLFWwindow *window, int key, int scancode, int action, int mods) {
     // Function is called first on GLFW_PRESS.
 
     if (action == GLFW_RELEASE) {
-        // switch (key) {
+        switch (key) {
         // case GLFW_KEY_C:
         // rectangle_rot_status = !rectangle_rot_status;
         // break;
-        // case GLFW_KEY_P:
+        case GLFW_KEY_S:
+        camera++;
+        camera%=5;
+        pressed = 1;
+        break;
         // triangle_rot_status = !triangle_rot_status;
         // break;
         // case GLFW_KEY_X:
         //// do something ..
         // break;
-        // default:
-        // break;
-        // }
+        default:
+        break;
+        }
     } else if (action == GLFW_PRESS) {
         switch (key) {
         case GLFW_KEY_ESCAPE:
@@ -54,7 +58,7 @@ void keyboardChar(GLFWwindow *window, unsigned int key) {
     switch (key) {
     case 'Q':
     case 'q':
-        quit(window);
+        //quit(window);
         break;
     default:
         break;

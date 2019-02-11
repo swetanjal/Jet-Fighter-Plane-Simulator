@@ -30,6 +30,8 @@ main.h
 main.h
 /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.h
 
+/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/global.h
+
 /home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/input.cpp
 iostream
 -
@@ -43,6 +45,8 @@ GL/glew.h
 -
 GLFW/glfw3.h
 -
+global.h
+/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/global.h
 glm/glm.hpp
 -
 glm/gtx/transform.hpp

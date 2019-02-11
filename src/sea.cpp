@@ -3,22 +3,31 @@
 #include "main.h"
 
 Sea::Sea(float x, float y, color_t color, double SPEED) {
-    this->position = glm::vec3(-500, 0, -500);
+    this->position = glm::vec3(0, 0, 0);
     this->rotation = 0;
     speed = SPEED;
     gravity = 0.0;
-    // Our vertices. Three consecutive floats give a 3D vertex; Three consecutive vertices give a triangle.
-    // A cube has 6 faces with 2 triangles each, so this makes 6*2=12 triangles, and 12*3 vertices
-    static const GLfloat vertex_buffer_data[] = {
-        -1000.0f, 0.0f,-1000.0f, // triangle 1 : begin
-        -1000.0f, 0.0f, 1000.0f,
-        1000.0f, 0.0f, -1000.0f, // triangle 1 : end
-        -1000.0f, 0.0f, 1000.0f, // triangle 2 : begin
-        1000.0f, 0.0f, 1000.0f,
-        1000.0f, 0.0f,-1000.0f, // triangle 2 : end
-    };
+    const int N = 360;
+	float deg = 360 * 1.0f / N;
+	float theta = 0.0f;
+	float pi = 3.141;
+	static GLfloat vertex_buffer_data[3 * 3 * N];
+	this->radius = 500;
+    for(int i = 0; i < N; ++i){
+		vertex_buffer_data[9 * i] = 0.0f;
+		vertex_buffer_data[9 * i + 1] = 0.0f;
+		vertex_buffer_data[9 * i + 2] = 0.0f;
 
-    this->object = create3DObject(GL_TRIANGLES, 2*3, vertex_buffer_data, color, GL_FILL);
+		vertex_buffer_data[9 * i + 3] = this->radius * 1.0f * cos(theta * pi * 1.0f / 180);
+		vertex_buffer_data[9 * i + 4] = 0.0f;
+		vertex_buffer_data[9 * i + 5] = this->radius * 1.0f * sin(theta * pi * 1.0f / 180);
+
+		theta += deg;
+		vertex_buffer_data[9 * i + 6] = this->radius * 1.0f * cos(theta * pi * 1.0f / 180);
+		vertex_buffer_data[9 * i + 7] = 0.0f;
+		vertex_buffer_data[9 * i + 8] = this->radius * 1.0f * sin(theta * pi * 1.0f / 180);
+    }
+    this->object = create3DObject(GL_TRIANGLES, N*3, vertex_buffer_data, color, GL_FILL);
 }
 
 void Sea::draw(glm::mat4 VP) {

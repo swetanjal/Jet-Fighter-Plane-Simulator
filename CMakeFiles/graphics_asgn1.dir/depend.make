@@ -12,6 +12,7 @@ CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o: src/enemy.cpp
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o: src/enemy.h
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o: src/main.h
 
+CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: src/global.h
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: src/input.cpp
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: src/main.h
 

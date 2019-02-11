@@ -15,8 +15,12 @@ public:
     void tick();
     double speed;
     float length;
+    int axis;
     float radius;
     double gravity;
+    glm::vec3 coords[3];
+    glm::mat4 ROT;
+    float rot[3];
 private:
     VAO *object;
     VAO *object2;
