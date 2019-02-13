@@ -258,6 +258,60 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/missile1.o: src/missile1.cpp.o
+
+.PHONY : src/missile1.o
+
+# target to build an object file
+src/missile1.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o
+.PHONY : src/missile1.cpp.o
+
+src/missile1.i: src/missile1.cpp.i
+
+.PHONY : src/missile1.i
+
+# target to preprocess a source file
+src/missile1.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.i
+.PHONY : src/missile1.cpp.i
+
+src/missile1.s: src/missile1.cpp.s
+
+.PHONY : src/missile1.s
+
+# target to generate assembly for a file
+src/missile1.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.s
+.PHONY : src/missile1.cpp.s
+
+src/models.o: src/models.cpp.o
+
+.PHONY : src/models.o
+
+# target to build an object file
+src/models.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/models.cpp.o
+.PHONY : src/models.cpp.o
+
+src/models.i: src/models.cpp.i
+
+.PHONY : src/models.i
+
+# target to preprocess a source file
+src/models.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/models.cpp.i
+.PHONY : src/models.cpp.i
+
+src/models.s: src/models.cpp.s
+
+.PHONY : src/models.s
+
+# target to generate assembly for a file
+src/models.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/models.cpp.s
+.PHONY : src/models.cpp.s
+
 src/nonedit.o: src/nonedit.cpp.o
 
 .PHONY : src/nonedit.o
@@ -417,6 +471,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/missile1.o"
+	@echo "... src/missile1.i"
+	@echo "... src/missile1.s"
+	@echo "... src/models.o"
+	@echo "... src/models.i"
+	@echo "... src/models.s"
 	@echo "... src/nonedit.o"
 	@echo "... src/nonedit.i"
 	@echo "... src/nonedit.s"

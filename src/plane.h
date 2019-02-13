@@ -18,7 +18,7 @@ public:
     int axis;
     float radius;
     double gravity;
-    glm::vec3 coords[3];
+    glm::vec3 xcoord, ycoord,zcoord;
     glm::mat4 ROT;
     float rot[3];
 private:

@@ -19,9 +19,19 @@ CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: src/main.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/enemy.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/main.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/missile1.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/models.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/plane.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/sea.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/timer.h
+
+CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o: src/main.h
+CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o: src/missile1.cpp
+CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o: src/missile1.h
+
+CMakeFiles/graphics_asgn1.dir/src/models.cpp.o: src/main.h
+CMakeFiles/graphics_asgn1.dir/src/models.cpp.o: src/models.cpp
+CMakeFiles/graphics_asgn1.dir/src/models.cpp.o: src/models.h
 
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: src/main.h
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: src/nonedit.cpp

@@ -5,19 +5,9 @@ using namespace std;
 
 Plane::Plane(float r, float l, color_t color, double SPEED) {
     this->position = glm::vec3(0, 5, 0);
-	this->coords[0] = glm::vec3(1, 0, 0);
-	this->coords[1] = glm::vec3(0, 1, 0);
-	this->coords[2] = glm::vec3(0, 0, 1);
-	for(int i = 0; i < 4; ++i)
-	{	
-		for(int j = 0; j < 4; ++j)
-		{
-			if(i == j)
-				this->ROT[i][j] = 1;
-			else
-				this->ROT[i][j] = 0;
-		}
-	}
+	this->xcoord = glm::vec3(1, 0, 0);
+	this->ycoord = glm::vec3(0, 1, 0);
+	this->zcoord = glm::vec3(0, 0, 1);
 	for(int i = 0; i < 3; ++i)
 		this->rot[i] = 0;
 	this->axis = 0;
@@ -131,9 +121,8 @@ Plane::Plane(float r, float l, color_t color, double SPEED) {
 void Plane::draw(glm::mat4 VP) {
     Matrices.model = glm::mat4(1.0f);
     glm::mat4 translate = glm::translate (this->position);    // glTranslatef
-    glm::mat4 rotate;
-	//if(this->rot[this->axis] != 0)
-	rotate  = glm::rotate((float) (this->rot[1] * M_PI / 180.0f), glm::vec3(0, 1, 0)) * glm::rotate((float) (this->rot[0] * M_PI / 180.0f), glm::vec3(1, 0, 0)) * glm::rotate((float) (this->rot[2] * M_PI / 180.0f), this->coords[2] = glm::vec3(0, 0, 1));
+	glm::mat4 rotate  = glm::rotate((float) (this->rot[1] * M_PI / 180.0f), glm::vec3(0, 1, 0)) * glm::rotate((float) (this->rot[0] * M_PI / 180.0f), 
+	glm::vec3(1, 0, 0)) * glm::rotate((float) (this->rot[2] * M_PI / 180.0f), glm::vec3(0, 0, 1));
 	// No need as coords centered at 0, 0, 0 of cube arouund which we waant to rotate
 	Matrices.model *= (translate * rotate);
     glm::mat4 MVP = VP * Matrices.model;
@@ -143,9 +132,11 @@ void Plane::draw(glm::mat4 VP) {
     draw3DObject(this->object3);
 	draw3DObject(this->object4);
 	draw3DObject(this->object5);
-	//cout << rotate[0][2] << " " << rotate[1][2] << " " << rotate[2][2]<<endl;
-	for(int i = 0; i < 3; ++i)
-		this->coords[i] = glm::vec3(rotate[0][i], rotate[1][i], rotate[2][i]);
+	this->xcoord = glm::vec3(rotate[0][0], rotate[0][1], rotate[0][2]);
+	this->ycoord = glm::vec3(rotate[1][0], rotate[1][1], rotate[1][2]);
+	this->zcoord = glm::vec3(rotate[2][0], rotate[2][1], rotate[2][2]);
+	cout << zcoord[0] << " " << zcoord[1] << " " << zcoord[2] << endl;
+	//cout << this->rot[1] << " " << this->zcoord[0] << " " << this->zcoord[1] << " " << this->zcoord[2] << endl;
 }
 
 void Plane::set_position(float x, float y) {
@@ -153,6 +144,8 @@ void Plane::set_position(float x, float y) {
 }
 
 void Plane::tick() {
+	//cout << this->coords[2][0] << " " << this->coords[2][1] << " " << this->coords[2][2] << endl;
+	//cout << this->position.z << endl;
 	for(int i = 0; i < 3; ++i){
 		if(this->rot[i] > 360)
 			this->rot[i] -= 360;

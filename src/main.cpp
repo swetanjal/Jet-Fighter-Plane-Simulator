@@ -3,6 +3,8 @@
 #include "sea.h"
 #include "plane.h"
 #include "enemy.h"
+#include "models.h"
+#include "missile1.h"
 using namespace std;
 
 GLMatrices Matrices;
@@ -22,8 +24,10 @@ Timer t60(1.0 / 60);
 
 /* Render the scene with openGL */
 Sea sea;
+Models cube;
 Plane plane;
 vector <Enemy> enemies;
+vector <Missile1> missile1;
 /* Edit this function according to your assignment */
 void draw() {
     // clear the color and depth in the frame buffer
@@ -50,25 +54,34 @@ void draw() {
         glm::vec3 up (0, 1, 0);
     }
     if(camera == 1){
-        //cout << plane.coords[2][1] << endl;
-        glm::mat4 rotate = glm::rotate((float) (plane.rot[1] * M_PI / 180.0f), glm::vec3(0, 1, 0));
-        glm::vec3 z = glm::vec3(rotate[0][2], -rotate[1][2], -rotate[2][2]);
-        //cout <<z[0] << " " << z[1] << " " << z[2] << endl;
+        glm::vec3 z = glm::vec3(-plane.zcoord[0], -plane.zcoord[1], -plane.zcoord[2]);
+        glm::vec3 x = glm::vec3(plane.xcoord[0], plane.xcoord[1], plane.xcoord[2]);
+        glm::vec3 y = glm::vec3(plane.ycoord[0], plane.ycoord[1], plane.ycoord[2]);
         glm::vec3 eye  = glm::vec3(plane.position.x + (3 * z[0]), plane.position.y + 3 * z[1], plane.position.z + 3 * z[2]);
-        //glm::vec3 eye (plane.position.x, plane.position.y,  plane.position.z - 3);
         // Target - Where is the camera looking at.  Don't change unless you are sure!!
-        //glm::vec3 target (plane.position.x, plane.position.y, plane.position.z - 2 * plane.length);
-        glm::vec3 target  = glm::vec3(eye[0] + z[0] * 3, eye[1] + z[1] * 3, eye[2] + z[2] * 3); //(plane.position.x + 10 * plane.coords[2][0], plane.position.y + 10 * plane.coords[2][1], plane.position.z -10 * plane.coords[2][2]);
+        glm::vec3 target  = glm::vec3(eye[0] + 2 * z[0], eye[1] + 2*z[1], eye[2]+2*z[2]); //(plane.position.x + 10 * plane.coords[2][0], plane.position.y + 10 * plane.coords[2][1], plane.position.z -10 * plane.coords[2][2]);
         // Up - Up vector defines tilt of camera.  Don't change unless you are sure!!
-        rotate  = glm::rotate((float) (plane.rot[2] * M_PI / 180.0f), z);
-        glm::vec3 up (rotate[0][1], rotate[1][1], rotate[2][1]);
+        glm::vec3 up (y[0], y[1], y[2]);
     }
     if(camera == 2){
         glm::vec3 eye (plane.position.x, plane.position.y + 20, plane.position.z + 5);
         // Target - Where is the camera looking at.  Don't change unless you are sure!!
         glm::vec3 target (plane.position.x, plane.position.y, plane.position.z);
         // Up - Up vector defines tilt of camera.  Don't change unless you are sure!!
+        glm::mat4 rotate = glm::rotate((float) (plane.rot[1] * M_PI / 180.0f), glm::vec3(0, 1, 0));
         glm::vec3 up (0, 0, -1);
+    }
+    if(camera == 3){
+        glm::mat4 rotate = glm::rotate((float) (plane.rot[1] * M_PI / 180.0f), glm::vec3(0, 1, 0));
+        glm::vec3 eye (plane.position.x + 10 * rotate[2][0], plane.position.y + 15, plane.position.z + 15 * rotate[2][2]);
+        //glm::vec3 eye (plane.position.x - 10 * plane.coords[2][0], plane.position.y + 15, plane.position.z + 15 );//* plane.coords[2][2]);
+        // Target - Where is the camera looking at.  Don't change unless you are sure!!
+        glm::vec3 target (plane.position.x, plane.position.y, plane.position.z);
+        // Up - Up vector defines tilt of camera.  Don't change unless you are sure!!
+        glm::vec3 up (0, 1, 0);
+    }
+    if(camera == 4){
+
     }
     // Compute Camera matrix (view)
     Matrices.view = glm::lookAt( eye, target, up ); // Rotating Camera for 3D
@@ -84,10 +97,13 @@ void draw() {
     // Don't change unless you are sure!!
     glm::mat4 MVP;  // MVP = Projection * View * Model
     // Scene render
+    //cube.draw(VP);
     sea.draw(VP);
     plane.draw(VP);
     for(int i = 0; i < enemies.size(); ++i)
         enemies[i].draw(VP);
+    for(int i = 0; i < missile1.size(); ++i)
+        missile1[i].draw(VP);
 }
 
 void tick_input(GLFWwindow *window) {
@@ -99,6 +115,17 @@ void tick_input(GLFWwindow *window) {
     int w = glfwGetKey(window, GLFW_KEY_W);
     int q = glfwGetKey(window, GLFW_KEY_Q);
     int e = glfwGetKey(window, GLFW_KEY_E);
+    int k = glfwGetKey(window, GLFW_KEY_K);
+    int m = glfwGetKey(window, GLFW_KEY_M);
+    int spc = glfwGetKey(window, GLFW_KEY_SPACE);
+    if(k){
+        plane.axis = 0;
+        plane.rot[plane.axis] += 1;
+    }
+    if(m){
+        plane.axis = 0;
+        plane.rot[plane.axis] -= 1;
+    }
     if (left) {
         // Do something
     }
@@ -111,8 +138,8 @@ void tick_input(GLFWwindow *window) {
         //plane.rot[0] -= 1;
     }
     if(w){
-        plane.position.x += 0.1 * plane.coords[2][0];
-        plane.position.z += 0.1 * -plane.coords[2][2];
+        plane.position.x += (-0.1 * plane.zcoord[0]);
+        plane.position.z += (-0.1 * plane.zcoord[2]);
     }
     if(q){
         plane.axis = 1;
@@ -120,7 +147,7 @@ void tick_input(GLFWwindow *window) {
     }
     if(e){
         plane.axis = 1;
-        plane.rot[plane.axis] += -1;
+        plane.rot[plane.axis] += (-1);
     }
     if(left){
         plane.axis = 2;
@@ -128,11 +155,20 @@ void tick_input(GLFWwindow *window) {
     }
     if(right){
         plane.axis = 2;
-        plane.rot[plane.axis] += -1;
+        plane.rot[plane.axis] += (-1);
+    }
+    if(spc){
+        glm::vec3 z = glm::vec3(-plane.zcoord[0], -plane.zcoord[1], -plane.zcoord[2]);
+        missile1.push_back(Missile1(plane.position.x, plane.position.y, plane.position.z, COLOR_BLACK, 1, z[0], z[1], z[2]));
     }
 }
 
 void tick_elements() {
+    for(int i = 0; i < missile1.size(); ++i)
+    {
+        
+        missile1[i].set_position(missile1[i].position.x + missile1[i].v.x, missile1[i].position.y + missile1[i].v.y, missile1[i].position.z + missile1[i].v.z);
+    }
     plane.tick();
 }
 
@@ -141,12 +177,14 @@ void tick_elements() {
 void initGL(GLFWwindow *window, int width, int height) {
     /* Objects should be created before any other gl function and shaders */
     // Create the models
+    //cube = Models(0, 0, COLOR_BLACK, 1);
     sea = Sea(0, 0, COLOR_SEA_BLUE, 1);
     plane = Plane(1, 5, COLOR_RED, 1);
     enemies.push_back(Enemy(6, 0, -10, COLOR_BLACK, 0));
     enemies.push_back(Enemy(12, 0, 0, COLOR_BLACK, 0));
     enemies.push_back(Enemy(6, 0, 10, COLOR_BLACK, 0));
     enemies.push_back(Enemy(-12, 0, 0, COLOR_BLACK, 0));
+    
     // Create and compile our GLSL program from the shaders
     programID = LoadShaders("Sample_GL.vert", "Sample_GL.frag");
     // Get a handle for our "MVP" uniform
