@@ -204,6 +204,33 @@ src/enemy.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.s
 .PHONY : src/enemy.cpp.s
 
+src/enemy_missile.o: src/enemy_missile.cpp.o
+
+.PHONY : src/enemy_missile.o
+
+# target to build an object file
+src/enemy_missile.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o
+.PHONY : src/enemy_missile.cpp.o
+
+src/enemy_missile.i: src/enemy_missile.cpp.i
+
+.PHONY : src/enemy_missile.i
+
+# target to preprocess a source file
+src/enemy_missile.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.i
+.PHONY : src/enemy_missile.cpp.i
+
+src/enemy_missile.s: src/enemy_missile.cpp.s
+
+.PHONY : src/enemy_missile.s
+
+# target to generate assembly for a file
+src/enemy_missile.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.s
+.PHONY : src/enemy_missile.cpp.s
+
 src/input.o: src/input.cpp.o
 
 .PHONY : src/input.o
@@ -258,6 +285,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/marker.o: src/marker.cpp.o
+
+.PHONY : src/marker.o
+
+# target to build an object file
+src/marker.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o
+.PHONY : src/marker.cpp.o
+
+src/marker.i: src/marker.cpp.i
+
+.PHONY : src/marker.i
+
+# target to preprocess a source file
+src/marker.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/marker.cpp.i
+.PHONY : src/marker.cpp.i
+
+src/marker.s: src/marker.cpp.s
+
+.PHONY : src/marker.s
+
+# target to generate assembly for a file
+src/marker.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/marker.cpp.s
+.PHONY : src/marker.cpp.s
+
 src/missile1.o: src/missile1.cpp.o
 
 .PHONY : src/missile1.o
@@ -284,6 +338,33 @@ src/missile1.s: src/missile1.cpp.s
 src/missile1.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.s
 .PHONY : src/missile1.cpp.s
+
+src/missile2.o: src/missile2.cpp.o
+
+.PHONY : src/missile2.o
+
+# target to build an object file
+src/missile2.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.o
+.PHONY : src/missile2.cpp.o
+
+src/missile2.i: src/missile2.cpp.i
+
+.PHONY : src/missile2.i
+
+# target to preprocess a source file
+src/missile2.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.i
+.PHONY : src/missile2.cpp.i
+
+src/missile2.s: src/missile2.cpp.s
+
+.PHONY : src/missile2.s
+
+# target to generate assembly for a file
+src/missile2.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.s
+.PHONY : src/missile2.cpp.s
 
 src/models.o: src/models.cpp.o
 
@@ -366,6 +447,33 @@ src/other_handlers.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.s
 .PHONY : src/other_handlers.cpp.s
 
+src/para.o: src/para.cpp.o
+
+.PHONY : src/para.o
+
+# target to build an object file
+src/para.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/para.cpp.o
+.PHONY : src/para.cpp.o
+
+src/para.i: src/para.cpp.i
+
+.PHONY : src/para.i
+
+# target to preprocess a source file
+src/para.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/para.cpp.i
+.PHONY : src/para.cpp.i
+
+src/para.s: src/para.cpp.s
+
+.PHONY : src/para.s
+
+# target to generate assembly for a file
+src/para.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/para.cpp.s
+.PHONY : src/para.cpp.s
+
 src/plane.o: src/plane.cpp.o
 
 .PHONY : src/plane.o
@@ -392,6 +500,33 @@ src/plane.s: src/plane.cpp.s
 src/plane.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/plane.cpp.s
 .PHONY : src/plane.cpp.s
+
+src/ring.o: src/ring.cpp.o
+
+.PHONY : src/ring.o
+
+# target to build an object file
+src/ring.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o
+.PHONY : src/ring.cpp.o
+
+src/ring.i: src/ring.cpp.i
+
+.PHONY : src/ring.i
+
+# target to preprocess a source file
+src/ring.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/ring.cpp.i
+.PHONY : src/ring.cpp.i
+
+src/ring.s: src/ring.cpp.s
+
+.PHONY : src/ring.s
+
+# target to generate assembly for a file
+src/ring.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/ring.cpp.s
+.PHONY : src/ring.cpp.s
 
 src/sea.o: src/sea.cpp.o
 
@@ -465,15 +600,24 @@ help:
 	@echo "... src/enemy.o"
 	@echo "... src/enemy.i"
 	@echo "... src/enemy.s"
+	@echo "... src/enemy_missile.o"
+	@echo "... src/enemy_missile.i"
+	@echo "... src/enemy_missile.s"
 	@echo "... src/input.o"
 	@echo "... src/input.i"
 	@echo "... src/input.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/marker.o"
+	@echo "... src/marker.i"
+	@echo "... src/marker.s"
 	@echo "... src/missile1.o"
 	@echo "... src/missile1.i"
 	@echo "... src/missile1.s"
+	@echo "... src/missile2.o"
+	@echo "... src/missile2.i"
+	@echo "... src/missile2.s"
 	@echo "... src/models.o"
 	@echo "... src/models.i"
 	@echo "... src/models.s"
@@ -483,9 +627,15 @@ help:
 	@echo "... src/other_handlers.o"
 	@echo "... src/other_handlers.i"
 	@echo "... src/other_handlers.s"
+	@echo "... src/para.o"
+	@echo "... src/para.i"
+	@echo "... src/para.s"
 	@echo "... src/plane.o"
 	@echo "... src/plane.i"
 	@echo "... src/plane.s"
+	@echo "... src/ring.o"
+	@echo "... src/ring.i"
+	@echo "... src/ring.s"
 	@echo "... src/sea.o"
 	@echo "... src/sea.i"
 	@echo "... src/sea.s"

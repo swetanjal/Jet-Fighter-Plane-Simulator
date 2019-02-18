@@ -74,13 +74,14 @@ void mouseButton(GLFWwindow *window, int button, int action, int mods) {
             return;
         } else if (action == GLFW_RELEASE) {
             // Do something
+            release_missile1 = 1;
         }
         break;
-    // case GLFW_MOUSE_BUTTON_RIGHT:
-    // if (action == GLFW_RELEASE) {
-    // rectangle_rot_dir *= -1;
-    // }
-    // break;
+    case GLFW_MOUSE_BUTTON_RIGHT:
+    if (action == GLFW_RELEASE) {
+        release_missile2 = 1;
+    }
+    break;
     default:
         break;
     }

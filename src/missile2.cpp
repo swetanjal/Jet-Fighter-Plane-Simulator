@@ -1,8 +1,8 @@
 #define GLM_ENABLE_EXPERIMENTAL
-#include "missile1.h"
+#include "missile2.h"
 #include "main.h"
 
-Missile1::Missile1(float x, float y, float z, color_t color, double SPEED, float vx, float vy, float vz, double ya, double p) {
+Missile2::Missile2(float x, float y, float z, color_t color, double SPEED, float vx, float vy, float vz, double ya, double p) {
     this->position = glm::vec3(x, y, z);
     this->rotation = 0;
     this->yaw = ya;
@@ -79,12 +79,12 @@ Missile1::Missile1(float x, float y, float z, color_t color, double SPEED, float
 		vertex_buffer_data[18 * i + 16] = this->radius * 1.0f * sin((theta-deg) * pi * 1.0f / 180);
 		vertex_buffer_data[18 * i + 17] = this->length / 2;
     }
-    this->object3 = create3DObject(GL_TRIANGLES, 3 * N, vertex_buffer_data3, COLOR_RED, GL_FILL);
-    this->object2 = create3DObject(GL_TRIANGLES, 3 * N, vertex_buffer_data2, COLOR_RED, GL_FILL); 
-    this->object = create3DObject(GL_TRIANGLES, 2 * 3 * N, vertex_buffer_data, color, GL_FILL);
+    this->object3 = create3DObject(GL_TRIANGLES, 3 * N, vertex_buffer_data3, COLOR_YELLOW, GL_FILL);
+    this->object2 = create3DObject(GL_TRIANGLES, 3 * N, vertex_buffer_data2, COLOR_YELLOW, GL_FILL); 
+    this->object = create3DObject(GL_TRIANGLES, 2 * 3 * N, vertex_buffer_data, COLOR_RED, GL_FILL);
 }
 
-void Missile1::draw(glm::mat4 VP) {
+void Missile2::draw(glm::mat4 VP) {
     Matrices.model = glm::mat4(1.0f);
     glm::mat4 translate = glm::translate (this->position);    // glTranslatef
     glm::mat4 rotate    = glm::rotate((float) (this->yaw * M_PI / 180.0f), glm::vec3(0, 1, 0)) * glm::rotate((float) (this->pitch * M_PI / 180.0f), glm::vec3(1, 0, 0));
@@ -98,11 +98,11 @@ void Missile1::draw(glm::mat4 VP) {
     draw3DObject(this->object3);
 }
 
-void Missile1::set_position(float x, float y, float z) {
+void Missile2::set_position(float x, float y, float z) {
     this->position = glm::vec3(x, y, z);
 }
 
-void Missile1::tick() {
+void Missile2::tick() {
     //this->rotation += speed;
     this->position.x += speed;
     this->position.y += gravity;

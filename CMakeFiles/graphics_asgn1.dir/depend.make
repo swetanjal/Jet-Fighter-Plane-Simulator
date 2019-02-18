@@ -12,22 +12,39 @@ CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o: src/enemy.cpp
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o: src/enemy.h
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o: src/main.h
 
+CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o: src/enemy_missile.cpp
+CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o: src/enemy_missile.h
+CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o: src/main.h
+
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: src/global.h
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: src/input.cpp
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: src/main.h
 
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/enemy.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/enemy_missile.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/main.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/marker.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/missile1.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/missile2.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/models.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/para.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/plane.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/ring.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/sea.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/timer.h
+
+CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o: src/main.h
+CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o: src/marker.cpp
+CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o: src/marker.h
 
 CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o: src/main.h
 CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o: src/missile1.cpp
 CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o: src/missile1.h
+
+CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.o: src/main.h
+CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.o: src/missile2.cpp
+CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.o: src/missile2.h
 
 CMakeFiles/graphics_asgn1.dir/src/models.cpp.o: src/main.h
 CMakeFiles/graphics_asgn1.dir/src/models.cpp.o: src/models.cpp
@@ -39,9 +56,17 @@ CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: src/nonedit.cpp
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: src/main.h
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: src/other_handlers.cpp
 
+CMakeFiles/graphics_asgn1.dir/src/para.cpp.o: src/main.h
+CMakeFiles/graphics_asgn1.dir/src/para.cpp.o: src/para.cpp
+CMakeFiles/graphics_asgn1.dir/src/para.cpp.o: src/para.h
+
 CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o: src/main.h
 CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o: src/plane.cpp
 CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o: src/plane.h
+
+CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o: src/main.h
+CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o: src/ring.cpp
+CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o: src/ring.h
 
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: src/main.h
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: src/sea.cpp

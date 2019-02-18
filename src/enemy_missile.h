@@ -1,13 +1,13 @@
 #include "main.h"
 #define GLM_ENABLE_EXPERIMENTAL
-#ifndef MISSILE1_H
-#define MISSILE1_H
+#ifndef ENEMY_MISSILE_H
+#define ENEMY_MISSILE_H
 
 
-class Missile1 {
+class Enemy_Missile {
 public:
-    Missile1() {}
-    Missile1(float x, float y, float z, color_t color, double SPEED, float vx, float vy, float vz, double ya, double p);
+    Enemy_Missile() {}
+    Enemy_Missile(float x, float y, float z, color_t color, double SPEED, float vx, float vy, float vz, double ya, double p);
     glm::vec3 position;
     float rotation;
     float length;

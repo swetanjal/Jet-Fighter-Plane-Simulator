@@ -4,7 +4,7 @@
 using namespace std;
 
 Plane::Plane(float r, float l, color_t color, double SPEED) {
-    this->position = glm::vec3(0, 5, 0);
+    this->position = glm::vec3(0, 10, 0);
 	this->xcoord = glm::vec3(1, 0, 0);
 	this->ycoord = glm::vec3(0, 1, 0);
 	this->zcoord = glm::vec3(0, 0, 1);
@@ -135,8 +135,6 @@ void Plane::draw(glm::mat4 VP) {
 	this->xcoord = glm::vec3(rotate[0][0], rotate[0][1], rotate[0][2]);
 	this->ycoord = glm::vec3(rotate[1][0], rotate[1][1], rotate[1][2]);
 	this->zcoord = glm::vec3(rotate[2][0], rotate[2][1], rotate[2][2]);
-	cout << zcoord[0] << " " << zcoord[1] << " " << zcoord[2] << endl;
-	//cout << this->rot[1] << " " << this->zcoord[0] << " " << this->zcoord[1] << " " << this->zcoord[2] << endl;
 }
 
 void Plane::set_position(float x, float y) {
@@ -144,8 +142,6 @@ void Plane::set_position(float x, float y) {
 }
 
 void Plane::tick() {
-	//cout << this->coords[2][0] << " " << this->coords[2][1] << " " << this->coords[2][2] << endl;
-	//cout << this->position.z << endl;
 	for(int i = 0; i < 3; ++i){
 		if(this->rot[i] > 360)
 			this->rot[i] -= 360;

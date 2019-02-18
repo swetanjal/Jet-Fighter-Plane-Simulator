@@ -74,7 +74,7 @@ struct bounding_box_t {
 };
 
 bool detect_collision(bounding_box_t a, bounding_box_t b);
-
+bool check_collision(float x, float y, float z, float X, float Y, float Z, float x_sz, float y_sz, float z_sz);
 extern float screen_zoom, screen_center_x, screen_center_y;
 void reset_screen();
 
@@ -85,4 +85,7 @@ extern const color_t COLOR_BLACK;
 extern const color_t COLOR_BACKGROUND;
 extern const color_t COLOR_SEA_BLUE;
 extern const color_t COLOR_STEEL_GRAY;
+extern const color_t COLOR_YELLOW;
+extern const color_t COLOR_SHINY_RED;
+extern const color_t COLOR_BROWN;
 #endif
