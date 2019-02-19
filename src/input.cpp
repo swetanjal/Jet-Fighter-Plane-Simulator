@@ -71,9 +71,11 @@ void mouseButton(GLFWwindow *window, int button, int action, int mods) {
     case GLFW_MOUSE_BUTTON_LEFT:
         if (action == GLFW_PRESS) {
             // Do something
+            press_click = 1;
             return;
         } else if (action == GLFW_RELEASE) {
             // Do something
+            release_click = 1;
             release_missile1 = 1;
         }
         break;

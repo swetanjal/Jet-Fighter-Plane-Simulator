@@ -48,6 +48,9 @@ Marker marker;
 Models cube;
 Plane plane;
 Ball ball;
+float theta = 0;
+double prev_mouse;
+double curr_mouse;
 Airspeed airspeed;
 Altimeter altimeter;
 vector <Bomb> bombs;
@@ -59,6 +62,8 @@ vector <Refuel> refuel;
 vector <Ring> rings;
 vector <Para> parachutes;
 Fuel_Bar fuel_bar;
+int press_click;
+int release_click;
 /* Edit this function according to your assignment */
 void draw() {
     // clear the color and depth in the frame buffer
@@ -116,7 +121,19 @@ void draw() {
         glm::vec3 up (0, 1, 0);
     }
     if(camera == 4){
-
+        double tmp;
+        glfwGetCursorPos(window, &curr_mouse, &tmp);
+        if(press_click){
+            prev_mouse = curr_mouse;
+            press_click = 0;
+        }
+        if(release_click){
+            release_click = 0;
+            theta -= (curr_mouse - prev_mouse) / 5;
+        }
+        glm::vec3 eye (plane.position.x + 10 * sin(theta * M_PI / 180.0f), plane.position.y + 8, plane.position.z + 10 * cos(theta * M_PI / 180.0f));
+        glm::vec3 target (plane.position.x, plane.position.y, plane.position.z);
+        glm::vec3 up (0, 1, 0);
     }
     // Compute Camera matrix (view)
     Matrices2.view = glm::lookAt(eye2, target2, up2);
@@ -177,6 +194,7 @@ void tick_input(GLFWwindow *window) {
     int k = glfwGetKey(window, GLFW_KEY_K);
     int m = glfwGetKey(window, GLFW_KEY_M);
     int spc = glfwGetKey(window, GLFW_KEY_SPACE);
+    int leftctrl = glfwGetKey(window, GLFW_KEY_LEFT_CONTROL);
     int b = glfwGetKey(window, GLFW_KEY_B);
     if(spc){
         if(abs(last_bomb - timer) >= 10){
@@ -228,7 +246,7 @@ void tick_input(GLFWwindow *window) {
         plane.axis = 2;
         plane.rot[plane.axis] += (-1);
     }
-    if(release_missile1){
+    if(release_missile1 && !leftctrl){
         glm::vec3 z = glm::vec3(-plane.zcoord[0], -plane.zcoord[1], -plane.zcoord[2]);
         if(abs(last_missile1 - timer) >= 100){
             missile1.push_back(Missile1(plane.position.x, plane.position.y, plane.position.z, COLOR_YELLOW, 1, z[0], z[1], z[2], plane.rot[1], plane.rot[0]));
@@ -236,7 +254,9 @@ void tick_input(GLFWwindow *window) {
         }
         release_missile1 = 0;
     }
-    if(release_missile2){
+    if(release_missile1)
+        release_missile1 = 0;
+    if(release_missile2 && !leftctrl){
         glm::vec3 z = glm::vec3(-plane.zcoord[0], -plane.zcoord[1], -plane.zcoord[2]);
         if(abs(last_missile1 - timer) >= 100){
             missile2.push_back(Missile2(plane.position.x, plane.position.y, plane.position.z, COLOR_YELLOW, 1, z[0], z[1], z[2], plane.rot[1], plane.rot[0]));
@@ -244,6 +264,8 @@ void tick_input(GLFWwindow *window) {
         }
         release_missile2 = 0;
     }
+    if(release_missile2)
+        release_missile2 = 0;
 }
 
 void tick_elements() {
@@ -299,7 +321,7 @@ void tick_elements() {
         cout << "Mission Accomplished!" << endl;
         quit(window);
     }
-    cout << "Plane Health: " << plane_health << " Active Enemy health: " << max(0.0 * 1.0, enemies[0].health) << " Score: " << score << " Height: " << height << endl;
+    //cout << "Plane Health: " << plane_health << " Active Enemy health: " << max(0.0 * 1.0, enemies[0].health) << " Score: " << score << " Height: " << height << endl;
     if(enemies[0].health <= 0)
     {
         enemies.erase(enemies.begin());

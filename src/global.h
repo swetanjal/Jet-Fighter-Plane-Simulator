@@ -5,3 +5,5 @@ extern int release_missile2;
 extern float F;
 extern float height;
 extern float knots;
+extern int press_click;
+extern int release_click;

@@ -35,7 +35,6 @@ void Fuel_Bar::draw(glm::mat4 VP) {
     draw3DObject(this->object);
     float length = 0.4;
     float br = F * 1.0f * length/ 200;
-    cout << br << endl;
     GLfloat vertex_buffer_data[] = {
         -length * 1.0f, -length * 1.0f + (float)(br * 2.0f), 0.0f, // triangle 1 : begin
         length * 1.0f, -length * 1.0f + (float)(br * 2.0f), 0.0f,
