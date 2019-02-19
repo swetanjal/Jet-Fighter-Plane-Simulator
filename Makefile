@@ -609,6 +609,33 @@ src/plane.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/plane.cpp.s
 .PHONY : src/plane.cpp.s
 
+src/refuel.o: src/refuel.cpp.o
+
+.PHONY : src/refuel.o
+
+# target to build an object file
+src/refuel.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/refuel.cpp.o
+.PHONY : src/refuel.cpp.o
+
+src/refuel.i: src/refuel.cpp.i
+
+.PHONY : src/refuel.i
+
+# target to preprocess a source file
+src/refuel.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/refuel.cpp.i
+.PHONY : src/refuel.cpp.i
+
+src/refuel.s: src/refuel.cpp.s
+
+.PHONY : src/refuel.s
+
+# target to generate assembly for a file
+src/refuel.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/refuel.cpp.s
+.PHONY : src/refuel.cpp.s
+
 src/ring.o: src/ring.cpp.o
 
 .PHONY : src/ring.o
@@ -753,6 +780,9 @@ help:
 	@echo "... src/plane.o"
 	@echo "... src/plane.i"
 	@echo "... src/plane.s"
+	@echo "... src/refuel.o"
+	@echo "... src/refuel.i"
+	@echo "... src/refuel.s"
 	@echo "... src/ring.o"
 	@echo "... src/ring.i"
 	@echo "... src/ring.s"

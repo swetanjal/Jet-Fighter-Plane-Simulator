@@ -54,6 +54,7 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/missile2.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/models.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/para.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/plane.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/refuel.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/ring.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/sea.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/timer.h
@@ -88,6 +89,10 @@ CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o: src/global.h
 CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o: src/main.h
 CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o: src/plane.cpp
 CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o: src/plane.h
+
+CMakeFiles/graphics_asgn1.dir/src/refuel.cpp.o: src/main.h
+CMakeFiles/graphics_asgn1.dir/src/refuel.cpp.o: src/refuel.cpp
+CMakeFiles/graphics_asgn1.dir/src/refuel.cpp.o: src/refuel.h
 
 CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o: src/main.h
 CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o: src/ring.cpp

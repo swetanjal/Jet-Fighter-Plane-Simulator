@@ -147,6 +147,8 @@ airspeed.h
 /home/tapas/Jet-Fighter-Plane-Simulator/src/airspeed.h
 bomb.h
 /home/tapas/Jet-Fighter-Plane-Simulator/src/bomb.h
+refuel.h
+/home/tapas/Jet-Fighter-Plane-Simulator/src/refuel.h
 
 /home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
 iostream
@@ -273,6 +275,16 @@ global.h
 /home/tapas/Jet-Fighter-Plane-Simulator/src/global.h
 
 /home/tapas/Jet-Fighter-Plane-Simulator/src/plane.h
+main.h
+/home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
+
+/home/tapas/Jet-Fighter-Plane-Simulator/src/refuel.cpp
+refuel.h
+/home/tapas/Jet-Fighter-Plane-Simulator/src/refuel.h
+main.h
+/home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
+
+/home/tapas/Jet-Fighter-Plane-Simulator/src/refuel.h
 main.h
 /home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
 

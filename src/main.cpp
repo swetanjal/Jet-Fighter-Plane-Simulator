@@ -15,6 +15,7 @@
 #include "altimeter.h"
 #include "airspeed.h"
 #include "bomb.h"
+#include "refuel.h"
 using namespace std;
 
 GLMatrices Matrices;
@@ -54,6 +55,7 @@ vector <Enemy> enemies;
 vector <Enemy_Missile> enemy_missiles;
 vector <Missile1> missile1;
 vector <Missile2> missile2;
+vector <Refuel> refuel;
 vector <Ring> rings;
 vector <Para> parachutes;
 Fuel_Bar fuel_bar;
@@ -151,6 +153,8 @@ void draw() {
         enemy_missiles[i].draw(VP);
     for(int i = 0; i < bombs.size(); ++i)
         bombs[i].draw(VP);
+    for(int i = 0; i < refuel.size(); ++i)
+        refuel[i].draw(VP);
     plane.draw(VP);
     // Dashboard
     fuel_bar.draw(VP1);
@@ -243,6 +247,15 @@ void tick_input(GLFWwindow *window) {
 }
 
 void tick_elements() {
+    for(int i = 0; i < refuel.size(); ++i)
+    if(check_collision(plane.position.x, plane.position.y, plane.position.z, refuel[i].position.x, refuel[i].position.y, refuel[i].position.z, 2, 2, 2)
+    || check_collision(plane.position.x, plane.position.y, plane.position.z - plane.length/2, refuel[i].position.x, refuel[i].position.y, refuel[i].position.z, 2, 2, 2)
+    || check_collision(plane.position.x, plane.position.y, plane.position.z + plane.length/2, refuel[i].position.x, refuel[i].position.y, refuel[i].position.z, 2, 2, 2))
+    {
+        F = 200;
+        refuel.erase(refuel.begin() + i);
+        i = i - 1;
+    }
     for(int i = 0; i < bombs.size(); ++i){
         bombs[i].tick();
         for(int j = 0; j < enemies.size(); ++j){
@@ -381,6 +394,7 @@ void initGL(GLFWwindow *window, int width, int height) {
     altimeter = Altimeter(-3, 7, 0, COLOR_WHITE, 1);
     airspeed = Airspeed(1, 7, 0, COLOR_WHITE, 1);
     //ball = Ball(0, -10, -3015, COLOR_BLACK, 1);
+    refuel.push_back(Refuel(0, 20, -10, COLOR_GREEN, 1.0));
     sea = Sea(0, 0, COLOR_SEA_BLUE, 1);
     plane = Plane(1, 5, COLOR_RED, 1);
     enemies.push_back(Enemy(6, 0, -10, COLOR_BLACK, 0));

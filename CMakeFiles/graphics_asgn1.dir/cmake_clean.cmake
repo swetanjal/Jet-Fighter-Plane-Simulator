@@ -17,6 +17,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/para.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o"
+  "CMakeFiles/graphics_asgn1.dir/src/refuel.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
