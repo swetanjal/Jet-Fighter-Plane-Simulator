@@ -1,13 +1,13 @@
 #include "main.h"
 #define GLM_ENABLE_EXPERIMENTAL
-#ifndef BALL_H
-#define BALL_H
+#ifndef ALTIMETER_H
+#define ALTIMETER_H
 
 
-class Ball {
+class Altimeter {
 public:
-    Ball() {}
-    Ball(float x, float y, float z, color_t color, double SPEED);
+    Altimeter() {}
+    Altimeter(float x, float y, float z, color_t color, double SPEED);
     glm::vec3 position;
     float rotation;
     void draw(glm::mat4 VP);
@@ -17,6 +17,7 @@ public:
     double gravity;
 private:
     VAO *object;
+    VAO *object1;
 };
 
 #endif // BALL_H

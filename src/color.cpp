@@ -8,3 +8,5 @@ const color_t COLOR_SEA_BLUE = {0, 105, 148};
 const color_t COLOR_STEEL_GRAY = {121, 122, 124};
 const color_t COLOR_YELLOW = {255, 255, 0};
 const color_t COLOR_BROWN = {165,42,42};
+const color_t COLOR_WHITE = {255, 255, 255};
+const color_t COLOR_VIOLET = {138,43,226};

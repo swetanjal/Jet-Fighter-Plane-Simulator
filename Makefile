@@ -123,6 +123,60 @@ graphics_asgn1/fast:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/build
 .PHONY : graphics_asgn1/fast
 
+src/airspeed.o: src/airspeed.cpp.o
+
+.PHONY : src/airspeed.o
+
+# target to build an object file
+src/airspeed.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o
+.PHONY : src/airspeed.cpp.o
+
+src/airspeed.i: src/airspeed.cpp.i
+
+.PHONY : src/airspeed.i
+
+# target to preprocess a source file
+src/airspeed.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.i
+.PHONY : src/airspeed.cpp.i
+
+src/airspeed.s: src/airspeed.cpp.s
+
+.PHONY : src/airspeed.s
+
+# target to generate assembly for a file
+src/airspeed.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.s
+.PHONY : src/airspeed.cpp.s
+
+src/altimeter.o: src/altimeter.cpp.o
+
+.PHONY : src/altimeter.o
+
+# target to build an object file
+src/altimeter.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o
+.PHONY : src/altimeter.cpp.o
+
+src/altimeter.i: src/altimeter.cpp.i
+
+.PHONY : src/altimeter.i
+
+# target to preprocess a source file
+src/altimeter.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.i
+.PHONY : src/altimeter.cpp.i
+
+src/altimeter.s: src/altimeter.cpp.s
+
+.PHONY : src/altimeter.s
+
+# target to generate assembly for a file
+src/altimeter.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.s
+.PHONY : src/altimeter.cpp.s
+
 src/ball.o: src/ball.cpp.o
 
 .PHONY : src/ball.o
@@ -230,6 +284,33 @@ src/enemy_missile.s: src/enemy_missile.cpp.s
 src/enemy_missile.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.s
 .PHONY : src/enemy_missile.cpp.s
+
+src/fuel_bar.o: src/fuel_bar.cpp.o
+
+.PHONY : src/fuel_bar.o
+
+# target to build an object file
+src/fuel_bar.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.o
+.PHONY : src/fuel_bar.cpp.o
+
+src/fuel_bar.i: src/fuel_bar.cpp.i
+
+.PHONY : src/fuel_bar.i
+
+# target to preprocess a source file
+src/fuel_bar.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.i
+.PHONY : src/fuel_bar.cpp.i
+
+src/fuel_bar.s: src/fuel_bar.cpp.s
+
+.PHONY : src/fuel_bar.s
+
+# target to generate assembly for a file
+src/fuel_bar.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.s
+.PHONY : src/fuel_bar.cpp.s
 
 src/input.o: src/input.cpp.o
 
@@ -591,6 +672,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... graphics_asgn1"
 	@echo "... edit_cache"
+	@echo "... src/airspeed.o"
+	@echo "... src/airspeed.i"
+	@echo "... src/airspeed.s"
+	@echo "... src/altimeter.o"
+	@echo "... src/altimeter.i"
+	@echo "... src/altimeter.s"
 	@echo "... src/ball.o"
 	@echo "... src/ball.i"
 	@echo "... src/ball.s"
@@ -603,6 +690,9 @@ help:
 	@echo "... src/enemy_missile.o"
 	@echo "... src/enemy_missile.i"
 	@echo "... src/enemy_missile.s"
+	@echo "... src/fuel_bar.o"
+	@echo "... src/fuel_bar.i"
+	@echo "... src/fuel_bar.s"
 	@echo "... src/input.o"
 	@echo "... src/input.i"
 	@echo "... src/input.s"

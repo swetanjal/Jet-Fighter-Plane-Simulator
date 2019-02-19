@@ -8,7 +8,7 @@ Ring::Ring(float x, float y, float z, color_t color, double SPEED) {
     speed = SPEED;
     gravity = 0.0;
     this->radius = 2;
-    this->length = 0.4;
+    this->length = 0.6;
     const int N = 360;
 	float deg = 360 * 1.0f / N;
 	float theta = 0.0f;

@@ -1,13 +1,13 @@
 #include "main.h"
 #define GLM_ENABLE_EXPERIMENTAL
-#ifndef BALL_H
-#define BALL_H
+#ifndef FUEL_BAR_H
+#define FUEL_BAR_H
 
 
-class Ball {
+class Fuel_Bar {
 public:
-    Ball() {}
-    Ball(float x, float y, float z, color_t color, double SPEED);
+    Fuel_Bar() {}
+    Fuel_Bar(float x, float y, float z, color_t color, double SPEED);
     glm::vec3 position;
     float rotation;
     void draw(glm::mat4 VP);
@@ -17,6 +17,7 @@ public:
     double gravity;
 private:
     VAO *object;
+    VAO *object1;
 };
 
 #endif // BALL_H

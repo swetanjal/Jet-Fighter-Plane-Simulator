@@ -10,9 +10,14 @@
 #include "para.h"
 #include "marker.h"
 #include "enemy_missile.h"
+#include "ball.h"
+#include "fuel_bar.h"
+#include "altimeter.h"
+#include "airspeed.h"
 using namespace std;
 
 GLMatrices Matrices;
+GLMatrices Matrices2;
 GLuint     programID;
 GLFWwindow *window;
 
@@ -24,8 +29,11 @@ float screen_zoom = 1, screen_center_x = 0, screen_center_y = 0;
 float camera_rotation_angle = 0;
 int camera = 2;
 long long score = 0;
+float F = 100.0f;
 int release_missile1 = 0;
 int release_missile2 = 0;
+float height = 0.0f;
+float knots;
 int pressed;
 long long plane_health = 100;
 int camera_x, camera_y, camera_z;
@@ -36,12 +44,16 @@ Sea sea;
 Marker marker;
 Models cube;
 Plane plane;
+Ball ball;
+Airspeed airspeed;
+Altimeter altimeter;
 vector <Enemy> enemies;
 vector <Enemy_Missile> enemy_missiles;
 vector <Missile1> missile1;
 vector <Missile2> missile2;
 vector <Ring> rings;
 vector <Para> parachutes;
+Fuel_Bar fuel_bar;
 /* Edit this function according to your assignment */
 void draw() {
     // clear the color and depth in the frame buffer
@@ -54,6 +66,9 @@ void draw() {
     // Eye - Location of camera. Don't change unless you are sure!!
     //glm::vec3 eye ( 5*cos(camera_rotation_angle*M_PI/180.0f), 0, 5*sin(camera_rotation_angle*M_PI/180.0f) );
     glm::vec3 eye, target, up;
+    glm::vec3 eye2 = glm::vec3(0, 10, 20);
+    glm::vec3 target2 = glm::vec3(0, 10, 0);
+    glm::vec3 up2 = glm::vec3(0, 1, 0);
     if(camera == 0){
         if(pressed == 1){
             camera_x = plane.position.x + (-1 * (rand() % 2)) * rand() % 4;
@@ -99,22 +114,25 @@ void draw() {
 
     }
     // Compute Camera matrix (view)
+    Matrices2.view = glm::lookAt(eye2, target2, up2);
+    glm::mat4 VP1 = Matrices2.projection * Matrices2.view;
     Matrices.view = glm::lookAt( eye, target, up ); // Rotating Camera for 3D
     // Don't change unless you are sure!!
     // Matrices.view = glm::lookAt(glm::vec3(0, 0, 3), glm::vec3(0, 0, 0), glm::vec3(0, 1, 0)); // Fixed camera for 2D (ortho) in XY plane
-
+    
     // Compute ViewProject matrix as view/camera might not be changed for this frame (basic scenario)
     // Don't change unless you are sure!!
     glm::mat4 VP = Matrices.projection * Matrices.view;
-
+    
     // Send our transformation to the currently bound shader, in the "MVP" uniform
     // For each model you render, since the MVP will be different (at least the M part)
     // Don't change unless you are sure!!
     glm::mat4 MVP;  // MVP = Projection * View * Model
     // Scene render
     //cube.draw(VP);
+    
     sea.draw(VP);
-    plane.draw(VP);
+    
     for(int i = 0; i < enemies.size(); ++i)
         enemies[i].draw(VP);
     for(int i = 0; i < missile1.size(); ++i)
@@ -128,6 +146,13 @@ void draw() {
     marker.draw(VP);
     for(int i = 0; i < enemy_missiles.size(); ++i)
         enemy_missiles[i].draw(VP);
+    plane.draw(VP);
+    // Dashboard
+    fuel_bar.draw(VP1);
+    altimeter.draw(VP1);
+    airspeed.draw(VP1);
+    //ball.draw(VP1);
+    /////////////
 }
 int timer;
 int last_missile1;
@@ -143,6 +168,10 @@ void tick_input(GLFWwindow *window) {
     int k = glfwGetKey(window, GLFW_KEY_K);
     int m = glfwGetKey(window, GLFW_KEY_M);
     int spc = glfwGetKey(window, GLFW_KEY_SPACE);
+    int b = glfwGetKey(window, GLFW_KEY_B);
+    if(b){
+        plane.speed = max(0.0, plane.speed - 0.005);
+    }
     if(k){
         plane.axis = 0;
         plane.rot[plane.axis] += 0.5;
@@ -163,8 +192,10 @@ void tick_input(GLFWwindow *window) {
         //plane.rot[0] -= 1;
     }
     if(w){
-        plane.position.x += (-0.1 * plane.zcoord[0]);
-        plane.position.z += (-0.1 * plane.zcoord[2]);
+        plane.speed = min(0.5, plane.speed + 0.001);
+        //plane.position.x += (-0.1 * plane.zcoord[0]);
+        //plane.position.z += (-0.1 * plane.zcoord[2]);
+        //F -= 0.05;
     }
     if(q){
         plane.axis = 1;
@@ -201,12 +232,32 @@ void tick_input(GLFWwindow *window) {
 }
 
 void tick_elements() {
+    knots = plane.speed;
+    height = plane.position.y;
+    if(height >= 75){
+        cout << "Game Over!\n You exceeded your allowed altitude!" << endl;
+        quit(window);
+    }
+    if(height <= 0.2){
+        cout << "Game Over!\n Your plane crashed on the ground!" << endl;
+        quit(window);
+    }
+    if(plane_health <= 0)
+    {
+        cout << "Game Over!\n Your plane health became 0!" << endl;
+        quit(window);
+    }
+    if(F <= 0)
+    {
+        cout << "Game Over!\n You ran out of fuel!" << endl;
+        quit(window);
+    }
     if(enemies.size() == 0)
     {
         cout << "Mission Accomplished!" << endl;
         quit(window);
     }
-    cout << "Plane Health: " << plane_health << " Active Enemy health: " << max(0.0 * 1.0, enemies[0].health) << " Score: " << score << endl;
+    cout << "Plane Health: " << plane_health << " Active Enemy health: " << max(0.0 * 1.0, enemies[0].health) << " Score: " << score << " Height: " << height << endl;
     if(enemies[0].health <= 0)
     {
         enemies.erase(enemies.begin());
@@ -297,15 +348,19 @@ void initGL(GLFWwindow *window, int width, int height) {
     /* Objects should be created before any other gl function and shaders */
     // Create the models
     //cube = Models(0, 0, COLOR_BLACK, 1);
+    fuel_bar = Fuel_Bar(-1, 7, 0, COLOR_WHITE, 1);
+    altimeter = Altimeter(-3, 7, 0, COLOR_WHITE, 1);
+    airspeed = Airspeed(1, 7, 0, COLOR_WHITE, 1);
+    //ball = Ball(0, -10, -3015, COLOR_BLACK, 1);
     sea = Sea(0, 0, COLOR_SEA_BLUE, 1);
     plane = Plane(1, 5, COLOR_RED, 1);
     enemies.push_back(Enemy(6, 0, -10, COLOR_BLACK, 0));
     enemies.push_back(Enemy(12, 0, 0, COLOR_BLACK, 0));
     enemies.push_back(Enemy(6, 0, 10, COLOR_BLACK, 0));
     enemies.push_back(Enemy(-12, 0, 0, COLOR_BLACK, 0));
-    rings.push_back(Ring(0, 5, -20, COLOR_YELLOW, 1));
+    rings.push_back(Ring(0, 15, -20, COLOR_YELLOW, 1));
     parachutes.push_back(Para(0, 20, -20, COLOR_RED, 0));
-    marker = Marker(0, 10, 0, COLOR_SHINY_RED, 1);
+    marker = Marker(0, 20, 0, COLOR_SHINY_RED, 1);
     
     // Create and compile our GLSL program from the shaders
     programID = LoadShaders("Sample_GL.vert", "Sample_GL.frag");
@@ -372,7 +427,7 @@ void reset_screen() {
     float right  = screen_center_x + 4 / screen_zoom;
     GLfloat fov = M_PI / 2;
     Matrices.projection = glm::perspective(fov, (GLfloat) window_width / (GLfloat) window_height, 0.1f, 500.0f);
-    //Matrices.projection = glm::ortho(left, right, bottom, top, 0.1f, 500.0f);
+    Matrices2.projection = glm::ortho(left, right, bottom, top, 0.1f, 500.0f);
 }
 bool check_collision(float x, float y, float z, float X, float Y, float Z, float x_sz, float y_sz, float z_sz){
     if(x >= (X - x_sz / 2) && x <= (X + x_sz / 2))

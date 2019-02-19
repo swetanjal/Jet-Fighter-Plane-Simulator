@@ -1,6 +1,7 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include "plane.h"
 #include "main.h"
+#include "global.h"
 using namespace std;
 
 Plane::Plane(float r, float l, color_t color, double SPEED) {
@@ -14,7 +15,7 @@ Plane::Plane(float r, float l, color_t color, double SPEED) {
     this->rotation = 0;
     this->radius = r;
     this->length = l;
-    speed = SPEED;
+    this->speed = 0;
     gravity = 0.0;
     const int N = 360;
 	float deg = 360 * 1.0f / N;
@@ -146,5 +147,9 @@ void Plane::tick() {
 		if(this->rot[i] > 360)
 			this->rot[i] -= 360;
 	}
+	this->position.x += (-this->speed * this->zcoord[0]);
+    this->position.z += (-this->speed * this->zcoord[2]);
+    if(this->speed > 0)
+		F -= 0.05;
 }
 
