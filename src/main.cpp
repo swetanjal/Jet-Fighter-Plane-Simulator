@@ -16,6 +16,7 @@
 #include "airspeed.h"
 #include "bomb.h"
 #include "refuel.h"
+#include "volcano.h"
 using namespace std;
 
 GLMatrices Matrices;
@@ -54,6 +55,7 @@ double curr_mouse;
 Airspeed airspeed;
 Altimeter altimeter;
 vector <Bomb> bombs;
+vector <Volcano> volcanoes;
 vector <Enemy> enemies;
 vector <Enemy_Missile> enemy_missiles;
 vector <Missile1> missile1;
@@ -131,7 +133,7 @@ void draw() {
             release_click = 0;
             theta -= (curr_mouse - prev_mouse) / 5;
         }
-        glm::vec3 eye (plane.position.x + 10 * sin(theta * M_PI / 180.0f), plane.position.y + 8, plane.position.z + 10 * cos(theta * M_PI / 180.0f));
+        glm::vec3 eye (plane.position.x + (10 - screen_zoom) * sin(theta * M_PI / 180.0f), plane.position.y + 8, plane.position.z + (10 - screen_zoom) * cos(theta * M_PI / 180.0f));
         glm::vec3 target (plane.position.x, plane.position.y, plane.position.z);
         glm::vec3 up (0, 1, 0);
     }
@@ -172,6 +174,8 @@ void draw() {
         bombs[i].draw(VP);
     for(int i = 0; i < refuel.size(); ++i)
         refuel[i].draw(VP);
+    for(int i = 0; i < volcanoes.size(); ++i)
+        volcanoes[i].draw(VP);
     plane.draw(VP);
     // Dashboard
     fuel_bar.draw(VP1);
@@ -269,6 +273,15 @@ void tick_input(GLFWwindow *window) {
 }
 
 void tick_elements() {
+    for(int i = 0; i < volcanoes.size(); ++i)
+    {
+        if(abs(plane.position.x - volcanoes[i].position.x) <= 4 && abs(plane.position.z - volcanoes[i].position.z)<=4 && plane.position.y <= volcanoes[i].height)
+        {
+            cout << "You flow too close to a volcano\n Game Over!!!\n";
+            quit(window);
+        }
+    }
+
     for(int i = 0; i < refuel.size(); ++i)
     if(check_collision(plane.position.x, plane.position.y, plane.position.z, refuel[i].position.x, refuel[i].position.y, refuel[i].position.z, 2, 2, 2)
     || check_collision(plane.position.x, plane.position.y, plane.position.z - plane.length/2, refuel[i].position.x, refuel[i].position.y, refuel[i].position.z, 2, 2, 2)
@@ -425,6 +438,7 @@ void initGL(GLFWwindow *window, int width, int height) {
     enemies.push_back(Enemy(-12, 0, 0, COLOR_BLACK, 0));
     rings.push_back(Ring(0, 15, -20, COLOR_YELLOW, 1));
     parachutes.push_back(Para(0, 20, -20, COLOR_RED, 0));
+    volcanoes.push_back(Volcano(-3, 0, 5, COLOR_YELLOW, 1.0));
     marker = Marker(0, 20, 0, COLOR_SHINY_RED, 1);
     
     // Create and compile our GLSL program from the shaders

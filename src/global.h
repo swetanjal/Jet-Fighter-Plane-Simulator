@@ -7,3 +7,4 @@ extern float height;
 extern float knots;
 extern int press_click;
 extern int release_click;
+extern float screen_zoom;

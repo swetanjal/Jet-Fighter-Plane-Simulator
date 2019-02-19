@@ -59,6 +59,7 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o
  /home/tapas/Jet-Fighter-Plane-Simulator/src/ring.h
  /home/tapas/Jet-Fighter-Plane-Simulator/src/sea.h
  /home/tapas/Jet-Fighter-Plane-Simulator/src/timer.h
+ /home/tapas/Jet-Fighter-Plane-Simulator/src/volcano.h
 CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o
  /home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
  /home/tapas/Jet-Fighter-Plane-Simulator/src/marker.cpp
@@ -105,3 +106,7 @@ CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o
  /home/tapas/Jet-Fighter-Plane-Simulator/src/timer.cpp
  /home/tapas/Jet-Fighter-Plane-Simulator/src/timer.h
+CMakeFiles/graphics_asgn1.dir/src/volcano.cpp.o
+ /home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
+ /home/tapas/Jet-Fighter-Plane-Simulator/src/volcano.cpp
+ /home/tapas/Jet-Fighter-Plane-Simulator/src/volcano.h

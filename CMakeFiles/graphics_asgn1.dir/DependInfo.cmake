@@ -26,6 +26,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tapas/Jet-Fighter-Plane-Simulator/src/ring.cpp" "/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o"
   "/home/tapas/Jet-Fighter-Plane-Simulator/src/sea.cpp" "/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o"
   "/home/tapas/Jet-Fighter-Plane-Simulator/src/timer.cpp" "/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
+  "/home/tapas/Jet-Fighter-Plane-Simulator/src/volcano.cpp" "/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/volcano.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

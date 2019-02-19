@@ -149,6 +149,8 @@ bomb.h
 /home/tapas/Jet-Fighter-Plane-Simulator/src/bomb.h
 refuel.h
 /home/tapas/Jet-Fighter-Plane-Simulator/src/refuel.h
+volcano.h
+/home/tapas/Jet-Fighter-Plane-Simulator/src/volcano.h
 
 /home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
 iostream
@@ -315,4 +317,14 @@ GLFW/glfw3.h
 -
 
 /home/tapas/Jet-Fighter-Plane-Simulator/src/timer.h
+
+/home/tapas/Jet-Fighter-Plane-Simulator/src/volcano.cpp
+volcano.h
+/home/tapas/Jet-Fighter-Plane-Simulator/src/volcano.h
+main.h
+/home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
+
+/home/tapas/Jet-Fighter-Plane-Simulator/src/volcano.h
+main.h
+/home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
 
