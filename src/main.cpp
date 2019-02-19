@@ -14,6 +14,7 @@
 #include "fuel_bar.h"
 #include "altimeter.h"
 #include "airspeed.h"
+#include "bomb.h"
 using namespace std;
 
 GLMatrices Matrices;
@@ -32,6 +33,7 @@ long long score = 0;
 float F = 100.0f;
 int release_missile1 = 0;
 int release_missile2 = 0;
+long long last_bomb = -10;
 float height = 0.0f;
 float knots;
 int pressed;
@@ -47,6 +49,7 @@ Plane plane;
 Ball ball;
 Airspeed airspeed;
 Altimeter altimeter;
+vector <Bomb> bombs;
 vector <Enemy> enemies;
 vector <Enemy_Missile> enemy_missiles;
 vector <Missile1> missile1;
@@ -146,6 +149,8 @@ void draw() {
     marker.draw(VP);
     for(int i = 0; i < enemy_missiles.size(); ++i)
         enemy_missiles[i].draw(VP);
+    for(int i = 0; i < bombs.size(); ++i)
+        bombs[i].draw(VP);
     plane.draw(VP);
     // Dashboard
     fuel_bar.draw(VP1);
@@ -169,6 +174,12 @@ void tick_input(GLFWwindow *window) {
     int m = glfwGetKey(window, GLFW_KEY_M);
     int spc = glfwGetKey(window, GLFW_KEY_SPACE);
     int b = glfwGetKey(window, GLFW_KEY_B);
+    if(spc){
+        if(abs(last_bomb - timer) >= 10){
+            bombs.push_back(Bomb(plane.position.x, plane.position.y, plane.position.z, COLOR_BLACK, 1.0));
+            last_bomb = timer;
+        }
+    }
     if(b){
         plane.speed = max(0.0, plane.speed - 0.005);
     }
@@ -232,6 +243,24 @@ void tick_input(GLFWwindow *window) {
 }
 
 void tick_elements() {
+    for(int i = 0; i < bombs.size(); ++i){
+        bombs[i].tick();
+        for(int j = 0; j < enemies.size(); ++j){
+            if(check_collision(bombs[i].position.x, bombs[i].position.y, bombs[i].position.z,
+            enemies[j].position.x, enemies[j].position.y, enemies[j].position.z, 4,4,6)){
+                enemies[j].health -= 5;
+                bombs.erase(bombs.begin() + i);
+                i = i - 1;
+                break;
+            }
+        }
+    }
+    for(int i = 0; i < enemies.size(); ++i){
+        if(enemies[i].health <= 0){
+            enemies.erase(enemies.begin() + i);
+            i = i - 1;
+        }
+    }
     knots = plane.speed;
     height = plane.position.y;
     if(height >= 75){

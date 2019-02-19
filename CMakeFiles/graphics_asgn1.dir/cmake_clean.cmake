@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o"
+  "CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/color.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o"
   "CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o"

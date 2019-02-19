@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator"
+CMAKE_SOURCE_DIR = /home/tapas/Jet-Fighter-Plane-Simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator"
+CMAKE_BINARY_DIR = /home/tapas/Jet-Fighter-Plane-Simulator
 
 # Include any dependencies generated for this target.
 include CMakeFiles/graphics_asgn1.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/graphics_asgn1.dir/flags.make
 
 CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o: src/airspeed.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/airspeed.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/airspeed.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/airspeed.cpp" > CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/airspeed.cpp > CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/airspeed.cpp" -o CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/airspeed.cpp -o CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o.provides.build: CMakeFiles/grap
 
 CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o: src/altimeter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/altimeter.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/altimeter.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/altimeter.cpp" > CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/altimeter.cpp > CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/altimeter.cpp" -o CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/altimeter.cpp -o CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o.provides.build: CMakeFiles/gra
 
 CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o: src/ball.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/ball.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/ball.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/ball.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/ball.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/ball.cpp" > CMakeFiles/graphics_asgn1.dir/src/ball.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/ball.cpp > CMakeFiles/graphics_asgn1.dir/src/ball.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/ball.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/ball.cpp" -o CMakeFiles/graphics_asgn1.dir/src/ball.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/ball.cpp -o CMakeFiles/graphics_asgn1.dir/src/ball.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o.requires:
 
@@ -129,18 +129,42 @@ CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o.provides: CMakeFiles/graphics_asgn1
 CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o
 
 
+CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
+CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o: src/bomb.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/bomb.cpp
+
+CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/bomb.cpp > CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.i
+
+CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/bomb.cpp -o CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.s
+
+CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o.requires:
+
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o.requires
+
+CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o.provides: CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o.requires
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o.provides.build
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o.provides
+
+CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o
+
+
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: src/color.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/color.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/color.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/color.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/color.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/color.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/color.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/color.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/color.cpp" > CMakeFiles/graphics_asgn1.dir/src/color.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/color.cpp > CMakeFiles/graphics_asgn1.dir/src/color.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/color.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/color.cpp" -o CMakeFiles/graphics_asgn1.dir/src/color.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/color.cpp -o CMakeFiles/graphics_asgn1.dir/src/color.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o.requires:
 
@@ -155,16 +179,16 @@ CMakeFiles/graphics_asgn1.dir/src/color.cpp.o.provides.build: CMakeFiles/graphic
 
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o: src/enemy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/enemy.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy.cpp" > CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/enemy.cpp > CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy.cpp" -o CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/enemy.cpp -o CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o.requires:
 
@@ -179,16 +203,16 @@ CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o.provides.build: CMakeFiles/graphic
 
 CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o: src/enemy_missile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy_missile.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/enemy_missile.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy_missile.cpp" > CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/enemy_missile.cpp > CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/enemy_missile.cpp" -o CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/enemy_missile.cpp -o CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o.requires:
 
@@ -203,16 +227,16 @@ CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.o: src/fuel_bar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/fuel_bar.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/fuel_bar.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/fuel_bar.cpp" > CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/fuel_bar.cpp > CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/fuel_bar.cpp" -o CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/fuel_bar.cpp -o CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.o.requires:
 
@@ -227,16 +251,16 @@ CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.o.provides.build: CMakeFiles/grap
 
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: src/input.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/input.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/input.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/input.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/input.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/input.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/input.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/input.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/input.cpp" > CMakeFiles/graphics_asgn1.dir/src/input.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/input.cpp > CMakeFiles/graphics_asgn1.dir/src/input.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/input.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/input.cpp" -o CMakeFiles/graphics_asgn1.dir/src/input.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/input.cpp -o CMakeFiles/graphics_asgn1.dir/src/input.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/input.cpp.o.requires:
 
@@ -251,16 +275,16 @@ CMakeFiles/graphics_asgn1.dir/src/input.cpp.o.provides.build: CMakeFiles/graphic
 
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/main.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/main.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/main.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.cpp" > CMakeFiles/graphics_asgn1.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/main.cpp > CMakeFiles/graphics_asgn1.dir/src/main.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/main.cpp" -o CMakeFiles/graphics_asgn1.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/main.cpp -o CMakeFiles/graphics_asgn1.dir/src/main.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o.requires:
 
@@ -275,16 +299,16 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o.provides.build: CMakeFiles/graphics
 
 CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o: src/marker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/marker.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/marker.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/marker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/marker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/marker.cpp" > CMakeFiles/graphics_asgn1.dir/src/marker.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/marker.cpp > CMakeFiles/graphics_asgn1.dir/src/marker.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/marker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/marker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/marker.cpp" -o CMakeFiles/graphics_asgn1.dir/src/marker.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/marker.cpp -o CMakeFiles/graphics_asgn1.dir/src/marker.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o.requires:
 
@@ -299,16 +323,16 @@ CMakeFiles/graphics_asgn1.dir/src/marker.cpp.o.provides.build: CMakeFiles/graphi
 
 CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o: src/missile1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/missile1.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/missile1.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/missile1.cpp" > CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/missile1.cpp > CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/missile1.cpp" -o CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/missile1.cpp -o CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o.requires:
 
@@ -323,16 +347,16 @@ CMakeFiles/graphics_asgn1.dir/src/missile1.cpp.o.provides.build: CMakeFiles/grap
 
 CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.o: src/missile2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/missile2.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/missile2.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/missile2.cpp" > CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/missile2.cpp > CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/missile2.cpp" -o CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/missile2.cpp -o CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.o.requires:
 
@@ -347,16 +371,16 @@ CMakeFiles/graphics_asgn1.dir/src/missile2.cpp.o.provides.build: CMakeFiles/grap
 
 CMakeFiles/graphics_asgn1.dir/src/models.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/models.cpp.o: src/models.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/models.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/models.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/models.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/models.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/models.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/models.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/models.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/models.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/models.cpp" > CMakeFiles/graphics_asgn1.dir/src/models.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/models.cpp > CMakeFiles/graphics_asgn1.dir/src/models.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/models.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/models.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/models.cpp" -o CMakeFiles/graphics_asgn1.dir/src/models.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/models.cpp -o CMakeFiles/graphics_asgn1.dir/src/models.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/models.cpp.o.requires:
 
@@ -371,16 +395,16 @@ CMakeFiles/graphics_asgn1.dir/src/models.cpp.o.provides.build: CMakeFiles/graphi
 
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o: src/nonedit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/nonedit.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/nonedit.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/nonedit.cpp" > CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/nonedit.cpp > CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/nonedit.cpp" -o CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/nonedit.cpp -o CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o.requires:
 
@@ -395,16 +419,16 @@ CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o.provides.build: CMakeFiles/graph
 
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: src/other_handlers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/other_handlers.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/other_handlers.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/other_handlers.cpp" > CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/other_handlers.cpp > CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/other_handlers.cpp" -o CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/other_handlers.cpp -o CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o.requires:
 
@@ -419,16 +443,16 @@ CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/graphics_asgn1.dir/src/para.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/para.cpp.o: src/para.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/para.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/para.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/para.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/para.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/para.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/para.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/para.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/para.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/para.cpp" > CMakeFiles/graphics_asgn1.dir/src/para.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/para.cpp > CMakeFiles/graphics_asgn1.dir/src/para.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/para.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/para.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/para.cpp" -o CMakeFiles/graphics_asgn1.dir/src/para.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/para.cpp -o CMakeFiles/graphics_asgn1.dir/src/para.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/para.cpp.o.requires:
 
@@ -443,16 +467,16 @@ CMakeFiles/graphics_asgn1.dir/src/para.cpp.o.provides.build: CMakeFiles/graphics
 
 CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o: src/plane.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/plane.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/plane.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/plane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/plane.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/plane.cpp" > CMakeFiles/graphics_asgn1.dir/src/plane.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/plane.cpp > CMakeFiles/graphics_asgn1.dir/src/plane.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/plane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/plane.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/plane.cpp" -o CMakeFiles/graphics_asgn1.dir/src/plane.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/plane.cpp -o CMakeFiles/graphics_asgn1.dir/src/plane.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o.requires:
 
@@ -467,16 +491,16 @@ CMakeFiles/graphics_asgn1.dir/src/plane.cpp.o.provides.build: CMakeFiles/graphic
 
 CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o: src/ring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/ring.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/ring.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/ring.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/ring.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/ring.cpp" > CMakeFiles/graphics_asgn1.dir/src/ring.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/ring.cpp > CMakeFiles/graphics_asgn1.dir/src/ring.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/ring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/ring.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/ring.cpp" -o CMakeFiles/graphics_asgn1.dir/src/ring.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/ring.cpp -o CMakeFiles/graphics_asgn1.dir/src/ring.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o.requires:
 
@@ -491,16 +515,16 @@ CMakeFiles/graphics_asgn1.dir/src/ring.cpp.o.provides.build: CMakeFiles/graphics
 
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: src/sea.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/sea.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/sea.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/sea.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/sea.cpp" > CMakeFiles/graphics_asgn1.dir/src/sea.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/sea.cpp > CMakeFiles/graphics_asgn1.dir/src/sea.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/sea.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/sea.cpp" -o CMakeFiles/graphics_asgn1.dir/src/sea.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/sea.cpp -o CMakeFiles/graphics_asgn1.dir/src/sea.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o.requires:
 
@@ -515,16 +539,16 @@ CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o.provides.build: CMakeFiles/graphics_
 
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: src/timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o -c "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/timer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o -c /home/tapas/Jet-Fighter-Plane-Simulator/src/timer.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/timer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/timer.cpp" > CMakeFiles/graphics_asgn1.dir/src/timer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tapas/Jet-Fighter-Plane-Simulator/src/timer.cpp > CMakeFiles/graphics_asgn1.dir/src/timer.cpp.i
 
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/timer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/src/timer.cpp" -o CMakeFiles/graphics_asgn1.dir/src/timer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tapas/Jet-Fighter-Plane-Simulator/src/timer.cpp -o CMakeFiles/graphics_asgn1.dir/src/timer.cpp.s
 
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o.requires:
 
@@ -542,6 +566,7 @@ graphics_asgn1_OBJECTS = \
 "CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o" \
+"CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/color.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o" \
@@ -566,6 +591,7 @@ graphics_asgn1_EXTERNAL_OBJECTS =
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o
+graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/color.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o
@@ -585,7 +611,7 @@ graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/build.make
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable graphics_asgn1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable graphics_asgn1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics_asgn1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -596,6 +622,7 @@ CMakeFiles/graphics_asgn1.dir/build: graphics_asgn1
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/airspeed.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/altimeter.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o.requires
+CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/color.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o.requires
@@ -621,6 +648,6 @@ CMakeFiles/graphics_asgn1.dir/clean:
 .PHONY : CMakeFiles/graphics_asgn1.dir/clean
 
 CMakeFiles/graphics_asgn1.dir/depend:
-	cd "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/tapas/Jet-Fighter-Plane-Simulator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tapas/Jet-Fighter-Plane-Simulator /home/tapas/Jet-Fighter-Plane-Simulator /home/tapas/Jet-Fighter-Plane-Simulator /home/tapas/Jet-Fighter-Plane-Simulator /home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/graphics_asgn1.dir/depend
 

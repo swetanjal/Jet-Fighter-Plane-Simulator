@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator"
+CMAKE_SOURCE_DIR = /home/tapas/Jet-Fighter-Plane-Simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator"
+CMAKE_BINARY_DIR = /home/tapas/Jet-Fighter-Plane-Simulator
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles /home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/tapas/workspace/Sem4/Computer Graphics/Assignments/Assignment 2/Jet-Fighter-Plane-Simulator/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -203,6 +203,33 @@ src/ball.s: src/ball.cpp.s
 src/ball.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/ball.cpp.s
 .PHONY : src/ball.cpp.s
+
+src/bomb.o: src/bomb.cpp.o
+
+.PHONY : src/bomb.o
+
+# target to build an object file
+src/bomb.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o
+.PHONY : src/bomb.cpp.o
+
+src/bomb.i: src/bomb.cpp.i
+
+.PHONY : src/bomb.i
+
+# target to preprocess a source file
+src/bomb.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.i
+.PHONY : src/bomb.cpp.i
+
+src/bomb.s: src/bomb.cpp.s
+
+.PHONY : src/bomb.s
+
+# target to generate assembly for a file
+src/bomb.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.s
+.PHONY : src/bomb.cpp.s
 
 src/color.o: src/color.cpp.o
 
@@ -681,6 +708,9 @@ help:
 	@echo "... src/ball.o"
 	@echo "... src/ball.i"
 	@echo "... src/ball.s"
+	@echo "... src/bomb.o"
+	@echo "... src/bomb.i"
+	@echo "... src/bomb.s"
 	@echo "... src/color.o"
 	@echo "... src/color.i"
 	@echo "... src/color.s"
