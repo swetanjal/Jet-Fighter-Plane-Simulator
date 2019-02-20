@@ -5,7 +5,7 @@
 using namespace std;
 
 Plane::Plane(float r, float l, color_t color, double SPEED) {
-    this->position = glm::vec3(0, 10, 0);
+    this->position = glm::vec3(0, 20, 0);
 	this->xcoord = glm::vec3(1, 0, 0);
 	this->ycoord = glm::vec3(0, 1, 0);
 	this->zcoord = glm::vec3(0, 0, 1);

@@ -334,10 +334,18 @@ void tick_elements() {
         cout << "Mission Accomplished!" << endl;
         quit(window);
     }
-    //cout << "Plane Health: " << plane_health << " Active Enemy health: " << max(0.0 * 1.0, enemies[0].health) << " Score: " << score << " Height: " << height << endl;
+    cout << "Plane Health: " << plane_health << " Active Enemy health: " << max(0.0 * 1.0, enemies[0].health) << " Score: " << score << endl;
     if(enemies[0].health <= 0)
     {
         enemies.erase(enemies.begin());
+    }
+
+    if((timer % 1000) == 0)
+    {
+        parachutes.push_back(Para(plane.position.x + 30, 40, plane.position.z, COLOR_RED, 0));
+        parachutes.push_back(Para(plane.position.x - 50, 40, plane.position.z, COLOR_RED, 0));
+        parachutes.push_back(Para(plane.position.x, 40, plane.position.z + 20, COLOR_RED, 0));
+        parachutes.push_back(Para(plane.position.x, 40, plane.position.z - 40, COLOR_RED, 0));
     }
     timer++;
     marker.set_position(enemies[0].position.x, marker.position.y, enemies[0].position.z);
@@ -428,17 +436,62 @@ void initGL(GLFWwindow *window, int width, int height) {
     fuel_bar = Fuel_Bar(-1, 7, 0, COLOR_WHITE, 1);
     altimeter = Altimeter(-3, 7, 0, COLOR_WHITE, 1);
     airspeed = Airspeed(1, 7, 0, COLOR_WHITE, 1);
-    //ball = Ball(0, -10, -3015, COLOR_BLACK, 1);
-    refuel.push_back(Refuel(0, 20, -10, COLOR_GREEN, 1.0));
     sea = Sea(0, 0, COLOR_SEA_BLUE, 1);
     plane = Plane(1, 5, COLOR_RED, 1);
-    enemies.push_back(Enemy(6, 0, -10, COLOR_BLACK, 0));
-    enemies.push_back(Enemy(12, 0, 0, COLOR_BLACK, 0));
-    enemies.push_back(Enemy(6, 0, 10, COLOR_BLACK, 0));
-    enemies.push_back(Enemy(-12, 0, 0, COLOR_BLACK, 0));
-    rings.push_back(Ring(0, 15, -20, COLOR_YELLOW, 1));
-    parachutes.push_back(Para(0, 20, -20, COLOR_RED, 0));
+    enemies.push_back(Enemy(2, 0, -40, COLOR_BLACK, 0));
+    refuel.push_back(Refuel(3, 30, -80, COLOR_GREEN, 1.0));
+    enemies.push_back(Enemy(80, 0, -100, COLOR_BLACK, 0));
+    refuel.push_back(Refuel(90, 30, -100, COLOR_GREEN, 1.0));
+    enemies.push_back(Enemy(160, 0, 100, COLOR_BLACK, 0));
+    refuel.push_back(Refuel(160, 30, 110, COLOR_GREEN, 1.0));
+    enemies.push_back(Enemy(-10, 0, 200, COLOR_BLACK, 0));
+    refuel.push_back(Refuel(-10, 30, 230, COLOR_GREEN, 1.0));
+    enemies.push_back(Enemy(-100, 0, 0, COLOR_BLACK, 0));
+    rings.push_back(Ring(0, 35, -50, COLOR_YELLOW, 1));
+    rings.push_back(Ring(0, 35, 50, COLOR_YELLOW, 1));
+    rings.push_back(Ring(50, 35, 0, COLOR_YELLOW, 1));
+    rings.push_back(Ring(-50, 35, 0, COLOR_YELLOW, 1));
     volcanoes.push_back(Volcano(-3, 0, 5, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-28, 0, 5, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-58, 0, 5, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(38, 0, 5, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(50, 0, 5, COLOR_YELLOW, 1.0));
+
+    volcanoes.push_back(Volcano(-3, 0, 145, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-28, 0, 145, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-58, 0, 145, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(38, 0, 125, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(150, 0, 145, COLOR_YELLOW, 1.0));
+
+    volcanoes.push_back(Volcano(-3, 0, -245, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-28, 0, -235, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-58, 0, -245, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(38, 0, -225, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(150, 0, -245, COLOR_YELLOW, 1.0));
+
+    volcanoes.push_back(Volcano(-200, 0, -3, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-210, 0, -28, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-205, 0, -58, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-203, 0, 38, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-198, 0, 150, COLOR_YELLOW, 1.0));
+
+    volcanoes.push_back(Volcano(-200, 0, -130, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-210, 0, -280, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-205, 0, -180, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-203, 0, -380, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(-198, 0, -150, COLOR_YELLOW, 1.0));
+
+    volcanoes.push_back(Volcano(200, 0, -3, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(210, 0, -28, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(205, 0, -58, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(203, 0, 38, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(198, 0, 150, COLOR_YELLOW, 1.0));
+
+    volcanoes.push_back(Volcano(200, 0, 200, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(210, 0, 280, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(205, 0, 350, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(203, 0, 300, COLOR_YELLOW, 1.0));
+    volcanoes.push_back(Volcano(198, 0, 380, COLOR_YELLOW, 1.0));
     marker = Marker(0, 20, 0, COLOR_SHINY_RED, 1);
     
     // Create and compile our GLSL program from the shaders
