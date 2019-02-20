@@ -22,6 +22,10 @@ CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o: src/main.h
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: src/color.cpp
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: src/main.h
 
+CMakeFiles/graphics_asgn1.dir/src/compass.cpp.o: src/compass.cpp
+CMakeFiles/graphics_asgn1.dir/src/compass.cpp.o: src/compass.h
+CMakeFiles/graphics_asgn1.dir/src/compass.cpp.o: src/main.h
+
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o: src/enemy.cpp
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o: src/enemy.h
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o: src/main.h
@@ -43,6 +47,7 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/airspeed.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/altimeter.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/ball.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/bomb.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/compass.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/enemy.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/enemy_missile.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: src/fuel_bar.h

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tapas/Jet-Fighter-Plane-Simulator/src/ball.cpp" "/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/ball.cpp.o"
   "/home/tapas/Jet-Fighter-Plane-Simulator/src/bomb.cpp" "/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o"
   "/home/tapas/Jet-Fighter-Plane-Simulator/src/color.cpp" "/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/color.cpp.o"
+  "/home/tapas/Jet-Fighter-Plane-Simulator/src/compass.cpp" "/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/compass.cpp.o"
   "/home/tapas/Jet-Fighter-Plane-Simulator/src/enemy.cpp" "/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o"
   "/home/tapas/Jet-Fighter-Plane-Simulator/src/enemy_missile.cpp" "/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/enemy_missile.cpp.o"
   "/home/tapas/Jet-Fighter-Plane-Simulator/src/fuel_bar.cpp" "/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir/src/fuel_bar.cpp.o"

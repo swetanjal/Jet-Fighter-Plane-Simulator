@@ -22,6 +22,10 @@ CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o
  /home/tapas/Jet-Fighter-Plane-Simulator/src/color.cpp
  /home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
+CMakeFiles/graphics_asgn1.dir/src/compass.cpp.o
+ /home/tapas/Jet-Fighter-Plane-Simulator/src/compass.cpp
+ /home/tapas/Jet-Fighter-Plane-Simulator/src/compass.h
+ /home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
 CMakeFiles/graphics_asgn1.dir/src/enemy.cpp.o
  /home/tapas/Jet-Fighter-Plane-Simulator/src/enemy.cpp
  /home/tapas/Jet-Fighter-Plane-Simulator/src/enemy.h
@@ -44,6 +48,7 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o
  /home/tapas/Jet-Fighter-Plane-Simulator/src/altimeter.h
  /home/tapas/Jet-Fighter-Plane-Simulator/src/ball.h
  /home/tapas/Jet-Fighter-Plane-Simulator/src/bomb.h
+ /home/tapas/Jet-Fighter-Plane-Simulator/src/compass.h
  /home/tapas/Jet-Fighter-Plane-Simulator/src/enemy.h
  /home/tapas/Jet-Fighter-Plane-Simulator/src/enemy_missile.h
  /home/tapas/Jet-Fighter-Plane-Simulator/src/fuel_bar.h

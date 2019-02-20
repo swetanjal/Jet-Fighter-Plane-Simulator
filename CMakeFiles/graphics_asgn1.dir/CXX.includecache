@@ -54,6 +54,16 @@ main.h
 main.h
 /home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
 
+/home/tapas/Jet-Fighter-Plane-Simulator/src/compass.cpp
+compass.h
+/home/tapas/Jet-Fighter-Plane-Simulator/src/compass.h
+main.h
+/home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
+
+/home/tapas/Jet-Fighter-Plane-Simulator/src/compass.h
+main.h
+/home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
+
 /home/tapas/Jet-Fighter-Plane-Simulator/src/enemy.cpp
 enemy.h
 /home/tapas/Jet-Fighter-Plane-Simulator/src/enemy.h
@@ -151,6 +161,8 @@ refuel.h
 /home/tapas/Jet-Fighter-Plane-Simulator/src/refuel.h
 volcano.h
 /home/tapas/Jet-Fighter-Plane-Simulator/src/volcano.h
+compass.h
+/home/tapas/Jet-Fighter-Plane-Simulator/src/compass.h
 
 /home/tapas/Jet-Fighter-Plane-Simulator/src/main.h
 iostream

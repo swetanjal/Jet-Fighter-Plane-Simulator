@@ -17,6 +17,7 @@
 #include "bomb.h"
 #include "refuel.h"
 #include "volcano.h"
+#include "compass.h"
 using namespace std;
 
 GLMatrices Matrices;
@@ -64,6 +65,7 @@ vector <Refuel> refuel;
 vector <Ring> rings;
 vector <Para> parachutes;
 Fuel_Bar fuel_bar;
+Compass compass;
 int press_click;
 int release_click;
 /* Edit this function according to your assignment */
@@ -181,6 +183,7 @@ void draw() {
     fuel_bar.draw(VP1);
     altimeter.draw(VP1);
     airspeed.draw(VP1);
+    compass.draw(VP1);
     //ball.draw(VP1);
     /////////////
 }
@@ -236,11 +239,13 @@ void tick_input(GLFWwindow *window) {
     }
     if(q){
         plane.axis = 1;
-        plane.rot[plane.axis] += 1;
+        plane.rot[plane.axis] += 0.5;
+        compass.rotation -= 0.5;
     }
     if(e){
         plane.axis = 1;
-        plane.rot[plane.axis] += (-1);
+        plane.rot[plane.axis] += (-0.5);
+        compass.rotation += 0.5;
     }
     if(left){
         plane.axis = 2;
@@ -436,6 +441,7 @@ void initGL(GLFWwindow *window, int width, int height) {
     fuel_bar = Fuel_Bar(-1, 7, 0, COLOR_WHITE, 1);
     altimeter = Altimeter(-3, 7, 0, COLOR_WHITE, 1);
     airspeed = Airspeed(1, 7, 0, COLOR_WHITE, 1);
+    compass = Compass(2.5, 7.5, 0, COLOR_WHITE, 1);
     sea = Sea(0, 0, COLOR_SEA_BLUE, 1);
     plane = Plane(1, 5, COLOR_RED, 1);
     enemies.push_back(Enemy(2, 0, -40, COLOR_BLACK, 0));
