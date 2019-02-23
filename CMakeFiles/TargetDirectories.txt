@@ -1,3 +1,0 @@
-/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/rebuild_cache.dir
-/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/graphics_asgn1.dir
-/home/tapas/Jet-Fighter-Plane-Simulator/CMakeFiles/edit_cache.dir

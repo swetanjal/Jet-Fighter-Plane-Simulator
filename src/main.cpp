@@ -207,6 +207,7 @@ void tick_input(GLFWwindow *window) {
         if(abs(last_bomb - timer) >= 10){
             bombs.push_back(Bomb(plane.position.x, plane.position.y, plane.position.z, COLOR_BLACK, 1.0));
             last_bomb = timer;
+            score -= 20;
         }
     }
     if(b){
@@ -260,6 +261,7 @@ void tick_input(GLFWwindow *window) {
         if(abs(last_missile1 - timer) >= 100){
             missile1.push_back(Missile1(plane.position.x, plane.position.y, plane.position.z, COLOR_YELLOW, 1, z[0], z[1], z[2], plane.rot[1], plane.rot[0]));
             last_missile1  = timer;
+            score -= 5;
         }
         release_missile1 = 0;
     }
@@ -270,6 +272,7 @@ void tick_input(GLFWwindow *window) {
         if(abs(last_missile1 - timer) >= 100){
             missile2.push_back(Missile2(plane.position.x, plane.position.y, plane.position.z, COLOR_YELLOW, 1, z[0], z[1], z[2], plane.rot[1], plane.rot[0]));
             last_missile1  = timer;
+            score -= 10;
         }
         release_missile2 = 0;
     }
@@ -406,6 +409,7 @@ void tick_elements() {
         if(check_collision(enemy_missiles[i].position.x, enemy_missiles[i].position.y, enemy_missiles[i].position.z, 
         plane.position.x, plane.position.y, plane.position.z, plane.radius, plane.radius, plane.length)){
             plane_health--;
+            score -= 10;
             enemy_missiles.erase(enemy_missiles.begin() + i);
             i = i - 1;
         }
